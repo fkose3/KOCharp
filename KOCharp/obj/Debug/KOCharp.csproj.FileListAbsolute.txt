@@ -1,0 +1,11 @@
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\bin\Debug\KOCharp.exe.config
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\bin\Debug\KOCharp.exe
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\bin\Debug\KOCharp.pdb
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\obj\Debug\KOCharp.csprojResolveAssemblyReference.cache
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\obj\Debug\KOCharp.main.resources
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\obj\Debug\KOCharp.Properties.Resources.resources
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\obj\Debug\KOCharp.csproj.GenerateResource.Cache
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\obj\Debug\KOCharp.exe
+c:\users\fatihkose\documents\visual studio 2015\Projects\KOCharp\KOCharp\obj\Debug\KOCharp.pdb
+C:\Users\FatihKOSE\Documents\Visual Studio 2015\Projects\KOCharp\KOCharp\bin\Debug\EntityFramework.dll
+C:\Users\FatihKOSE\Documents\Visual Studio 2015\Projects\KOCharp\KOCharp\bin\Debug\EntityFramework.xml

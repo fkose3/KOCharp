@@ -1,0 +1,2648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="moyangamePKModelStoreContainer" CdmEntityContainer="KODatabase">
+    <EntitySetMapping Name="ACCOUNT_NATION_TRANSFERS_QUEUE">
+      <EntityTypeMapping TypeName="moyangamePKModel.ACCOUNT_NATION_TRANSFERS_QUEUE">
+        <MappingFragment StoreEntitySet="ACCOUNT_NATION_TRANSFERS_QUEUE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="moyangamePKModel.dtproperties">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="haberler">
+      <EntityTypeMapping TypeName="moyangamePKModel.haberler">
+        <MappingFragment StoreEntitySet="haberler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="metin" ColumnName="metin" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEM">
+        <MappingFragment StoreEntitySet="ITEM">
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="Slot" ColumnName="Slot" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Delay" ColumnName="Delay" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="BuyPrice" ColumnName="BuyPrice" />
+          <ScalarProperty Name="SellPrice" ColumnName="SellPrice" />
+          <ScalarProperty Name="Ac" ColumnName="Ac" />
+          <ScalarProperty Name="Countable" ColumnName="Countable" />
+          <ScalarProperty Name="Effect1" ColumnName="Effect1" />
+          <ScalarProperty Name="Effect2" ColumnName="Effect2" />
+          <ScalarProperty Name="ReqLevel" ColumnName="ReqLevel" />
+          <ScalarProperty Name="ReqLevelMax" ColumnName="ReqLevelMax" />
+          <ScalarProperty Name="ReqRank" ColumnName="ReqRank" />
+          <ScalarProperty Name="ReqTitle" ColumnName="ReqTitle" />
+          <ScalarProperty Name="ReqStr" ColumnName="ReqStr" />
+          <ScalarProperty Name="ReqSta" ColumnName="ReqSta" />
+          <ScalarProperty Name="ReqDex" ColumnName="ReqDex" />
+          <ScalarProperty Name="ReqIntel" ColumnName="ReqIntel" />
+          <ScalarProperty Name="ReqCha" ColumnName="ReqCha" />
+          <ScalarProperty Name="SellingGroup" ColumnName="SellingGroup" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="Hitrate" ColumnName="Hitrate" />
+          <ScalarProperty Name="Evasionrate" ColumnName="Evasionrate" />
+          <ScalarProperty Name="DaggerAc" ColumnName="DaggerAc" />
+          <ScalarProperty Name="SwordAc" ColumnName="SwordAc" />
+          <ScalarProperty Name="MaceAc" ColumnName="MaceAc" />
+          <ScalarProperty Name="AxeAc" ColumnName="AxeAc" />
+          <ScalarProperty Name="SpearAc" ColumnName="SpearAc" />
+          <ScalarProperty Name="BowAc" ColumnName="BowAc" />
+          <ScalarProperty Name="FireDamage" ColumnName="FireDamage" />
+          <ScalarProperty Name="IceDamage" ColumnName="IceDamage" />
+          <ScalarProperty Name="LightningDamage" ColumnName="LightningDamage" />
+          <ScalarProperty Name="PoisonDamage" ColumnName="PoisonDamage" />
+          <ScalarProperty Name="HPDrain" ColumnName="HPDrain" />
+          <ScalarProperty Name="MPDamage" ColumnName="MPDamage" />
+          <ScalarProperty Name="MPDrain" ColumnName="MPDrain" />
+          <ScalarProperty Name="MirrorDamage" ColumnName="MirrorDamage" />
+          <ScalarProperty Name="Droprate" ColumnName="Droprate" />
+          <ScalarProperty Name="StrB" ColumnName="StrB" />
+          <ScalarProperty Name="StaB" ColumnName="StaB" />
+          <ScalarProperty Name="DexB" ColumnName="DexB" />
+          <ScalarProperty Name="IntelB" ColumnName="IntelB" />
+          <ScalarProperty Name="ChaB" ColumnName="ChaB" />
+          <ScalarProperty Name="MaxHpB" ColumnName="MaxHpB" />
+          <ScalarProperty Name="MaxMpB" ColumnName="MaxMpB" />
+          <ScalarProperty Name="FireR" ColumnName="FireR" />
+          <ScalarProperty Name="ColdR" ColumnName="ColdR" />
+          <ScalarProperty Name="LightningR" ColumnName="LightningR" />
+          <ScalarProperty Name="MagicR" ColumnName="MagicR" />
+          <ScalarProperty Name="PoisonR" ColumnName="PoisonR" />
+          <ScalarProperty Name="CurseR" ColumnName="CurseR" />
+          <ScalarProperty Name="ItemClass" ColumnName="ItemClass" />
+          <ScalarProperty Name="ItemExt" ColumnName="ItemExt" />
+          <ScalarProperty Name="UpgradeNotice" ColumnName="UpgradeNotice" />
+          <ScalarProperty Name="NPbuyPrice" ColumnName="NPbuyPrice" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_MONSTER">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_MONSTER">
+        <MappingFragment StoreEntitySet="K_MONSTER">
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="sPid" ColumnName="sPid" />
+          <ScalarProperty Name="sSize" ColumnName="sSize" />
+          <ScalarProperty Name="iWeapon1" ColumnName="iWeapon1" />
+          <ScalarProperty Name="iWeapon2" ColumnName="iWeapon2" />
+          <ScalarProperty Name="byGroup" ColumnName="byGroup" />
+          <ScalarProperty Name="byActType" ColumnName="byActType" />
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="byFamily" ColumnName="byFamily" />
+          <ScalarProperty Name="byRank" ColumnName="byRank" />
+          <ScalarProperty Name="byTitle" ColumnName="byTitle" />
+          <ScalarProperty Name="iSellingGroup" ColumnName="iSellingGroup" />
+          <ScalarProperty Name="sLevel" ColumnName="sLevel" />
+          <ScalarProperty Name="iExp" ColumnName="iExp" />
+          <ScalarProperty Name="iLoyalty" ColumnName="iLoyalty" />
+          <ScalarProperty Name="iHpPoint" ColumnName="iHpPoint" />
+          <ScalarProperty Name="sMpPoint" ColumnName="sMpPoint" />
+          <ScalarProperty Name="sAtk" ColumnName="sAtk" />
+          <ScalarProperty Name="sAc" ColumnName="sAc" />
+          <ScalarProperty Name="sHitRate" ColumnName="sHitRate" />
+          <ScalarProperty Name="sEvadeRate" ColumnName="sEvadeRate" />
+          <ScalarProperty Name="sDamage" ColumnName="sDamage" />
+          <ScalarProperty Name="sAttackDelay" ColumnName="sAttackDelay" />
+          <ScalarProperty Name="m_sSpeed" ColumnName="m_sSpeed" />
+          <ScalarProperty Name="bySpeed1" ColumnName="bySpeed1" />
+          <ScalarProperty Name="bySpeed2" ColumnName="bySpeed2" />
+          <ScalarProperty Name="sStandtime" ColumnName="sStandtime" />
+          <ScalarProperty Name="sItem" ColumnName="sItem" />
+          <ScalarProperty Name="iMagic1" ColumnName="iMagic1" />
+          <ScalarProperty Name="iMagic2" ColumnName="iMagic2" />
+          <ScalarProperty Name="iMagic3" ColumnName="iMagic3" />
+          <ScalarProperty Name="sFireR" ColumnName="sFireR" />
+          <ScalarProperty Name="sColdR" ColumnName="sColdR" />
+          <ScalarProperty Name="sLightningR" ColumnName="sLightningR" />
+          <ScalarProperty Name="sMagicR" ColumnName="sMagicR" />
+          <ScalarProperty Name="sDiseaseR" ColumnName="sDiseaseR" />
+          <ScalarProperty Name="sPoisonR" ColumnName="sPoisonR" />
+          <ScalarProperty Name="sLightR" ColumnName="sLightR" />
+          <ScalarProperty Name="sBulk" ColumnName="sBulk" />
+          <ScalarProperty Name="byAttackRange" ColumnName="byAttackRange" />
+          <ScalarProperty Name="bySearchRange" ColumnName="bySearchRange" />
+          <ScalarProperty Name="byTracingRange" ColumnName="byTracingRange" />
+          <ScalarProperty Name="iMoney" ColumnName="iMoney" />
+          <ScalarProperty Name="byDirectAttack" ColumnName="byDirectAttack" />
+          <ScalarProperty Name="byMagicAttack" ColumnName="byMagicAttack" />
+          <ScalarProperty Name="byMoneyType" ColumnName="byMoneyType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KNIGHTS">
+      <EntityTypeMapping TypeName="moyangamePKModel.KNIGHTS">
+        <MappingFragment StoreEntitySet="KNIGHTS">
+          <ScalarProperty Name="IDNum" ColumnName="IDNum" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="Ranking" ColumnName="Ranking" />
+          <ScalarProperty Name="IDName" ColumnName="IDName" />
+          <ScalarProperty Name="Members" ColumnName="Members" />
+          <ScalarProperty Name="Chief" ColumnName="Chief" />
+          <ScalarProperty Name="ViceChief_1" ColumnName="ViceChief_1" />
+          <ScalarProperty Name="ViceChief_2" ColumnName="ViceChief_2" />
+          <ScalarProperty Name="ViceChief_3" ColumnName="ViceChief_3" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="Domination" ColumnName="Domination" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="sMarkVersion" ColumnName="sMarkVersion" />
+          <ScalarProperty Name="sMarkLen" ColumnName="sMarkLen" />
+          <ScalarProperty Name="sCape" ColumnName="sCape" />
+          <ScalarProperty Name="bCapeR" ColumnName="bCapeR" />
+          <ScalarProperty Name="bCapeG" ColumnName="bCapeG" />
+          <ScalarProperty Name="bCapeB" ColumnName="bCapeB" />
+          <ScalarProperty Name="sAllianceKnights" ColumnName="sAllianceKnights" />
+          <ScalarProperty Name="ClanPointFund" ColumnName="ClanPointFund" />
+          <ScalarProperty Name="strClanNotice" ColumnName="strClanNotice" />
+          <ScalarProperty Name="bySiegeFlag" ColumnName="bySiegeFlag" />
+          <ScalarProperty Name="nLose" ColumnName="nLose" />
+          <ScalarProperty Name="nVictory" ColumnName="nVictory" />
+          <ScalarProperty Name="ClanPointMethod" ColumnName="ClanPointMethod" />
+          <ScalarProperty Name="dtCreateTime" ColumnName="dtCreateTime" />
+          <ScalarProperty Name="nWarEnemyID" ColumnName="nWarEnemyID" />
+          <ScalarProperty Name="strEnemyName" ColumnName="strEnemyName" />
+          <ScalarProperty Name="byOldWarResult" ColumnName="byOldWarResult" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAIL_BOX">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAIL_BOX">
+        <MappingFragment StoreEntitySet="MAIL_BOX">
+          <ScalarProperty Name="nLetterID" ColumnName="nLetterID" />
+          <ScalarProperty Name="dtSendDate" ColumnName="dtSendDate" />
+          <ScalarProperty Name="dtReadDate" ColumnName="dtReadDate" />
+          <ScalarProperty Name="bStatus" ColumnName="bStatus" />
+          <ScalarProperty Name="strSenderID" ColumnName="strSenderID" />
+          <ScalarProperty Name="strRecipientID" ColumnName="strRecipientID" />
+          <ScalarProperty Name="strSubject" ColumnName="strSubject" />
+          <ScalarProperty Name="strMessage" ColumnName="strMessage" />
+          <ScalarProperty Name="bType" ColumnName="bType" />
+          <ScalarProperty Name="nItemID" ColumnName="nItemID" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+          <ScalarProperty Name="sDurability" ColumnName="sDurability" />
+          <ScalarProperty Name="nSerialNum" ColumnName="nSerialNum" />
+          <ScalarProperty Name="nCoins" ColumnName="nCoins" />
+          <ScalarProperty Name="bDeleted" ColumnName="bDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAKE_ITEM_GROUP">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAKE_ITEM_GROUP">
+        <MappingFragment StoreEntitySet="MAKE_ITEM_GROUP">
+          <ScalarProperty Name="iItemGroupNum" ColumnName="iItemGroupNum" />
+          <ScalarProperty Name="iItem_1" ColumnName="iItem_1" />
+          <ScalarProperty Name="iItem_2" ColumnName="iItem_2" />
+          <ScalarProperty Name="iItem_3" ColumnName="iItem_3" />
+          <ScalarProperty Name="iItem_4" ColumnName="iItem_4" />
+          <ScalarProperty Name="iItem_5" ColumnName="iItem_5" />
+          <ScalarProperty Name="iItem_6" ColumnName="iItem_6" />
+          <ScalarProperty Name="iItem_7" ColumnName="iItem_7" />
+          <ScalarProperty Name="iItem_8" ColumnName="iItem_8" />
+          <ScalarProperty Name="iItem_9" ColumnName="iItem_9" />
+          <ScalarProperty Name="iItem_10" ColumnName="iItem_10" />
+          <ScalarProperty Name="iItem_11" ColumnName="iItem_11" />
+          <ScalarProperty Name="iItem_12" ColumnName="iItem_12" />
+          <ScalarProperty Name="iItem_13" ColumnName="iItem_13" />
+          <ScalarProperty Name="iItem_14" ColumnName="iItem_14" />
+          <ScalarProperty Name="iItem_15" ColumnName="iItem_15" />
+          <ScalarProperty Name="iItem_16" ColumnName="iItem_16" />
+          <ScalarProperty Name="iItem_17" ColumnName="iItem_17" />
+          <ScalarProperty Name="iItem_18" ColumnName="iItem_18" />
+          <ScalarProperty Name="iItem_19" ColumnName="iItem_19" />
+          <ScalarProperty Name="iItem_20" ColumnName="iItem_20" />
+          <ScalarProperty Name="iItem_21" ColumnName="iItem_21" />
+          <ScalarProperty Name="iItem_22" ColumnName="iItem_22" />
+          <ScalarProperty Name="iItem_23" ColumnName="iItem_23" />
+          <ScalarProperty Name="iItem_24" ColumnName="iItem_24" />
+          <ScalarProperty Name="iItem_25" ColumnName="iItem_25" />
+          <ScalarProperty Name="iItem_26" ColumnName="iItem_26" />
+          <ScalarProperty Name="iItem_27" ColumnName="iItem_27" />
+          <ScalarProperty Name="iItem_28" ColumnName="iItem_28" />
+          <ScalarProperty Name="iItem_29" ColumnName="iItem_29" />
+          <ScalarProperty Name="iItem_30" ColumnName="iItem_30" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAYPAL_LOG">
+      <EntityTypeMapping TypeName="moyangamePKModel.PAYPAL_LOG">
+        <MappingFragment StoreEntitySet="PAYPAL_LOG">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="StrAccountID" ColumnName="StrAccountID" />
+          <ScalarProperty Name="txid" ColumnName="txid" />
+          <ScalarProperty Name="tutar" ColumnName="tutar" />
+          <ScalarProperty Name="payment_status" ColumnName="payment_status" />
+          <ScalarProperty Name="item_name" ColumnName="item_name" />
+          <ScalarProperty Name="receiver_email" ColumnName="receiver_email" />
+          <ScalarProperty Name="payer_email" ColumnName="payer_email" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PUS_CASH">
+      <EntityTypeMapping TypeName="moyangamePKModel.PUS_CASH">
+        <MappingFragment StoreEntitySet="PUS_CASH">
+          <ScalarProperty Name="cashid" ColumnName="cashid" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PUS_ITEMLERI">
+      <EntityTypeMapping TypeName="moyangamePKModel.PUS_ITEMLERI">
+        <MappingFragment StoreEntitySet="PUS_ITEMLERI">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="ExtraItem" ColumnName="ExtraItem" />
+          <ScalarProperty Name="ItemIsmi" ColumnName="ItemIsmi" />
+          <ScalarProperty Name="ItemResmi" ColumnName="ItemResmi" />
+          <ScalarProperty Name="itemkodu" ColumnName="itemkodu" />
+          <ScalarProperty Name="adet" ColumnName="adet" />
+          <ScalarProperty Name="ucret" ColumnName="ucret" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="alindi" ColumnName="alindi" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="islev" ColumnName="islev" />
+          <ScalarProperty Name="sure" ColumnName="sure" />
+          <ScalarProperty Name="kullanim" ColumnName="kullanim" />
+          <ScalarProperty Name="kosul" ColumnName="kosul" />
+          <ScalarProperty Name="reqtitle" ColumnName="reqtitle" />
+          <ScalarProperty Name="ItemVer" ColumnName="ItemVer" />
+          <ScalarProperty Name="KomutCalistir" ColumnName="KomutCalistir" />
+          <ScalarProperty Name="Komut" ColumnName="Komut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PUS_ITEMLERI_PAKET">
+      <EntityTypeMapping TypeName="moyangamePKModel.PUS_ITEMLERI_PAKET">
+        <MappingFragment StoreEntitySet="PUS_ITEMLERI_PAKET">
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="PItem1" ColumnName="PItem1" />
+          <ScalarProperty Name="Adet1" ColumnName="Adet1" />
+          <ScalarProperty Name="PItem2" ColumnName="PItem2" />
+          <ScalarProperty Name="Adet2" ColumnName="Adet2" />
+          <ScalarProperty Name="PItem3" ColumnName="PItem3" />
+          <ScalarProperty Name="Adet3" ColumnName="Adet3" />
+          <ScalarProperty Name="PItem4" ColumnName="PItem4" />
+          <ScalarProperty Name="Adet4" ColumnName="Adet4" />
+          <ScalarProperty Name="PItem5" ColumnName="PItem5" />
+          <ScalarProperty Name="Adet5" ColumnName="Adet5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_HELPER">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_HELPER">
+        <MappingFragment StoreEntitySet="QUEST_HELPER">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="bMessageType" ColumnName="bMessageType" />
+          <ScalarProperty Name="bLevel" ColumnName="bLevel" />
+          <ScalarProperty Name="nExp" ColumnName="nExp" />
+          <ScalarProperty Name="bClass" ColumnName="bClass" />
+          <ScalarProperty Name="bNation" ColumnName="bNation" />
+          <ScalarProperty Name="bQuestType" ColumnName="bQuestType" />
+          <ScalarProperty Name="bZone" ColumnName="bZone" />
+          <ScalarProperty Name="sNpcId" ColumnName="sNpcId" />
+          <ScalarProperty Name="sEventDataIndex" ColumnName="sEventDataIndex" />
+          <ScalarProperty Name="bEventStatus" ColumnName="bEventStatus" />
+          <ScalarProperty Name="nEventTriggerIndex" ColumnName="nEventTriggerIndex" />
+          <ScalarProperty Name="nEventCompleteIndex" ColumnName="nEventCompleteIndex" />
+          <ScalarProperty Name="nExchangeIndex" ColumnName="nExchangeIndex" />
+          <ScalarProperty Name="nEventTalkIndex" ColumnName="nEventTalkIndex" />
+          <ScalarProperty Name="strLuaFilename" ColumnName="strLuaFilename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RENTAL_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.RENTAL_ITEM">
+        <MappingFragment StoreEntitySet="RENTAL_ITEM">
+          <ScalarProperty Name="nRentalIndex" ColumnName="nRentalIndex" />
+          <ScalarProperty Name="nItemIndex" ColumnName="nItemIndex" />
+          <ScalarProperty Name="sDurability" ColumnName="sDurability" />
+          <ScalarProperty Name="nSerialNumber" ColumnName="nSerialNumber" />
+          <ScalarProperty Name="byRegType" ColumnName="byRegType" />
+          <ScalarProperty Name="byItemType" ColumnName="byItemType" />
+          <ScalarProperty Name="byClass" ColumnName="byClass" />
+          <ScalarProperty Name="sRentalTime" ColumnName="sRentalTime" />
+          <ScalarProperty Name="nRentalMoney" ColumnName="nRentalMoney" />
+          <ScalarProperty Name="strLenderCharID" ColumnName="strLenderCharID" />
+          <ScalarProperty Name="strLenderAcID" ColumnName="strLenderAcID" />
+          <ScalarProperty Name="strBorrowerCharID" ColumnName="strBorrowerCharID" />
+          <ScalarProperty Name="strBorrowerAcID" ColumnName="strBorrowerAcID" />
+          <ScalarProperty Name="timeLender" ColumnName="timeLender" />
+          <ScalarProperty Name="timeRegister" ColumnName="timeRegister" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RENTAL_ITEM_LIST">
+      <EntityTypeMapping TypeName="moyangamePKModel.RENTAL_ITEM_LIST">
+        <MappingFragment StoreEntitySet="RENTAL_ITEM_LIST">
+          <ScalarProperty Name="nRentalIndex" ColumnName="nRentalIndex" />
+          <ScalarProperty Name="nItemIndex" ColumnName="nItemIndex" />
+          <ScalarProperty Name="sDurability" ColumnName="sDurability" />
+          <ScalarProperty Name="nSerialNumber" ColumnName="nSerialNumber" />
+          <ScalarProperty Name="byRegType" ColumnName="byRegType" />
+          <ScalarProperty Name="byItemType" ColumnName="byItemType" />
+          <ScalarProperty Name="byClass" ColumnName="byClass" />
+          <ScalarProperty Name="sRentalTime" ColumnName="sRentalTime" />
+          <ScalarProperty Name="nRentalMoney" ColumnName="nRentalMoney" />
+          <ScalarProperty Name="strLenderCharID" ColumnName="strLenderCharID" />
+          <ScalarProperty Name="strLenderAcID" ColumnName="strLenderAcID" />
+          <ScalarProperty Name="strBorrowerCharID" ColumnName="strBorrowerCharID" />
+          <ScalarProperty Name="strBorrowerAcID" ColumnName="strBorrowerAcID" />
+          <ScalarProperty Name="timeLender" ColumnName="timeLender" />
+          <ScalarProperty Name="timeRegister" ColumnName="timeRegister" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SEALED_ITEMS">
+      <EntityTypeMapping TypeName="moyangamePKModel.SEALED_ITEMS">
+        <MappingFragment StoreEntitySet="SEALED_ITEMS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="nItemSerial" ColumnName="nItemSerial" />
+          <ScalarProperty Name="nItemID" ColumnName="nItemID" />
+          <ScalarProperty Name="bSealType" ColumnName="bSealType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_KNIGHTS_RANK">
+      <EntityTypeMapping TypeName="moyangamePKModel.USER_KNIGHTS_RANK">
+        <MappingFragment StoreEntitySet="USER_KNIGHTS_RANK">
+          <ScalarProperty Name="shIndex" ColumnName="shIndex" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="strElmoUserID" ColumnName="strElmoUserID" />
+          <ScalarProperty Name="strElmoKnightsName" ColumnName="strElmoKnightsName" />
+          <ScalarProperty Name="nElmoLoyalty" ColumnName="nElmoLoyalty" />
+          <ScalarProperty Name="strKarusUserID" ColumnName="strKarusUserID" />
+          <ScalarProperty Name="strKarusKnightsName" ColumnName="strKarusKnightsName" />
+          <ScalarProperty Name="nKarusLoyalty" ColumnName="nKarusLoyalty" />
+          <ScalarProperty Name="nMoney" ColumnName="nMoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_PERSONAL_RANK">
+      <EntityTypeMapping TypeName="moyangamePKModel.USER_PERSONAL_RANK">
+        <MappingFragment StoreEntitySet="USER_PERSONAL_RANK">
+          <ScalarProperty Name="nRank" ColumnName="nRank" />
+          <ScalarProperty Name="strPosition" ColumnName="strPosition" />
+          <ScalarProperty Name="nElmoUP" ColumnName="nElmoUP" />
+          <ScalarProperty Name="strElmoUserID" ColumnName="strElmoUserID" />
+          <ScalarProperty Name="nElmoLoyaltyMonthly" ColumnName="nElmoLoyaltyMonthly" />
+          <ScalarProperty Name="nElmoCheck" ColumnName="nElmoCheck" />
+          <ScalarProperty Name="nKarusUP" ColumnName="nKarusUP" />
+          <ScalarProperty Name="strKarusUserID" ColumnName="strKarusUserID" />
+          <ScalarProperty Name="nKarusLoyaltyMonthly" ColumnName="nKarusLoyaltyMonthly" />
+          <ScalarProperty Name="nKarusCheck" ColumnName="nKarusCheck" />
+          <ScalarProperty Name="nSalary" ColumnName="nSalary" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_RENTAL_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.USER_RENTAL_ITEM">
+        <MappingFragment StoreEntitySet="USER_RENTAL_ITEM">
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="byRentalType" ColumnName="byRentalType" />
+          <ScalarProperty Name="byRegType" ColumnName="byRegType" />
+          <ScalarProperty Name="nRentalIndex" ColumnName="nRentalIndex" />
+          <ScalarProperty Name="nItemIndex" ColumnName="nItemIndex" />
+          <ScalarProperty Name="sDurability" ColumnName="sDurability" />
+          <ScalarProperty Name="nSerialNumber" ColumnName="nSerialNumber" />
+          <ScalarProperty Name="nRentalMoney" ColumnName="nRentalMoney" />
+          <ScalarProperty Name="sRentalTime" ColumnName="sRentalTime" />
+          <ScalarProperty Name="sDuringTime" ColumnName="sDuringTime" />
+          <ScalarProperty Name="timeRental" ColumnName="timeRental" />
+          <ScalarProperty Name="timeRegister" ColumnName="timeRegister" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERDATA">
+      <EntityTypeMapping TypeName="moyangamePKModel.USERDATA">
+        <MappingFragment StoreEntitySet="USERDATA">
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="HairRGB" ColumnName="HairRGB" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Exp" ColumnName="Exp" />
+          <ScalarProperty Name="Loyalty" ColumnName="Loyalty" />
+          <ScalarProperty Name="Face" ColumnName="Face" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Knights" ColumnName="Knights" />
+          <ScalarProperty Name="Fame" ColumnName="Fame" />
+          <ScalarProperty Name="Hp" ColumnName="Hp" />
+          <ScalarProperty Name="Mp" ColumnName="Mp" />
+          <ScalarProperty Name="Sp" ColumnName="Sp" />
+          <ScalarProperty Name="Strong" ColumnName="Strong" />
+          <ScalarProperty Name="Sta" ColumnName="Sta" />
+          <ScalarProperty Name="Dex" ColumnName="Dex" />
+          <ScalarProperty Name="Intel" ColumnName="Intel" />
+          <ScalarProperty Name="Cha" ColumnName="Cha" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Bind" ColumnName="Bind" />
+          <ScalarProperty Name="PX" ColumnName="PX" />
+          <ScalarProperty Name="PZ" ColumnName="PZ" />
+          <ScalarProperty Name="PY" ColumnName="PY" />
+          <ScalarProperty Name="dwTime" ColumnName="dwTime" />
+          <ScalarProperty Name="strSkill" ColumnName="strSkill" />
+          <ScalarProperty Name="strItem" ColumnName="strItem" />
+          <ScalarProperty Name="strSerial" ColumnName="strSerial" />
+          <ScalarProperty Name="sQuestCount" ColumnName="sQuestCount" />
+          <ScalarProperty Name="strQuest" ColumnName="strQuest" />
+          <ScalarProperty Name="MannerPoint" ColumnName="MannerPoint" />
+          <ScalarProperty Name="LoyaltyMonthly" ColumnName="LoyaltyMonthly" />
+          <ScalarProperty Name="iSavedCONT" ColumnName="iSavedCONT" />
+          <ScalarProperty Name="strItemTime" ColumnName="strItemTime" />
+          <ScalarProperty Name="dtCreateTime" ColumnName="dtCreateTime" />
+          <ScalarProperty Name="dtUpdateTime" ColumnName="dtUpdateTime" />
+          <ScalarProperty Name="CSWFreeLoyaltyUpdateTime" ColumnName="CSWFreeLoyaltyUpdateTime" />
+          <ScalarProperty Name="strMemo" ColumnName="strMemo" />
+          <ScalarProperty Name="sGenieTime" ColumnName="sGenieTime" />
+          <ScalarProperty Name="strGenieOptions" ColumnName="strGenieOptions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERDATA_SKILLSHORTCUT">
+      <EntityTypeMapping TypeName="moyangamePKModel.USERDATA_SKILLSHORTCUT">
+        <MappingFragment StoreEntitySet="USERDATA_SKILLSHORTCUT">
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="nCount" ColumnName="nCount" />
+          <ScalarProperty Name="strSkillData" ColumnName="strSkillData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VOTE_BUTTONS">
+      <EntityTypeMapping TypeName="moyangamePKModel.VOTE_BUTTONS">
+        <MappingFragment StoreEntitySet="VOTE_BUTTONS">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="button" ColumnName="button" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VOTE_REWARD_LOGS">
+      <EntityTypeMapping TypeName="moyangamePKModel.VOTE_REWARD_LOGS">
+        <MappingFragment StoreEntitySet="VOTE_REWARD_LOGS">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="nPrizeID" ColumnName="nPrizeID" />
+          <ScalarProperty Name="redeemTime" ColumnName="redeemTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VOTE_REWARDS">
+      <EntityTypeMapping TypeName="moyangamePKModel.VOTE_REWARDS">
+        <MappingFragment StoreEntitySet="VOTE_REWARDS">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nCost" ColumnName="nCost" />
+          <ScalarProperty Name="bItem" ColumnName="bItem" />
+          <ScalarProperty Name="bGold" ColumnName="bGold" />
+          <ScalarProperty Name="nPrize" ColumnName="nPrize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WAREHOUSE">
+      <EntityTypeMapping TypeName="moyangamePKModel.WAREHOUSE">
+        <MappingFragment StoreEntitySet="WAREHOUSE">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="nMoney" ColumnName="nMoney" />
+          <ScalarProperty Name="dwTime" ColumnName="dwTime" />
+          <ScalarProperty Name="WarehouseData" ColumnName="WarehouseData" />
+          <ScalarProperty Name="strSerial" ColumnName="strSerial" />
+          <ScalarProperty Name="WarehouseDataTime" ColumnName="WarehouseDataTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZONE_INFO">
+      <EntityTypeMapping TypeName="moyangamePKModel.ZONE_INFO">
+        <MappingFragment StoreEntitySet="ZONE_INFO">
+          <ScalarProperty Name="ServerNo" ColumnName="ServerNo" />
+          <ScalarProperty Name="ZoneNo" ColumnName="ZoneNo" />
+          <ScalarProperty Name="strZoneName" ColumnName="strZoneName" />
+          <ScalarProperty Name="InitX" ColumnName="InitX" />
+          <ScalarProperty Name="InitZ" ColumnName="InitZ" />
+          <ScalarProperty Name="InitY" ColumnName="InitY" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="RoomEvent" ColumnName="RoomEvent" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_Panel_Duyrular">
+      <EntityTypeMapping TypeName="moyangamePKModel.C_Panel_Duyrular">
+        <MappingFragment StoreEntitySet="_Panel_Duyrular">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="detay" ColumnName="detay" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="etkinlik" ColumnName="etkinlik" />
+          <ScalarProperty Name="duyuru" ColumnName="duyuru" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACCOUNT_CHAR">
+      <EntityTypeMapping TypeName="moyangamePKModel.ACCOUNT_CHAR">
+        <MappingFragment StoreEntitySet="ACCOUNT_CHAR">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="bNation" ColumnName="bNation" />
+          <ScalarProperty Name="bCharNum" ColumnName="bCharNum" />
+          <ScalarProperty Name="strCharID1" ColumnName="strCharID1" />
+          <ScalarProperty Name="strCharID2" ColumnName="strCharID2" />
+          <ScalarProperty Name="strCharID3" ColumnName="strCharID3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BATTLE">
+      <EntityTypeMapping TypeName="moyangamePKModel.BATTLE">
+        <MappingFragment StoreEntitySet="BATTLE">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="byNation" ColumnName="byNation" />
+          <ScalarProperty Name="strUserName" ColumnName="strUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BEGINNER_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.BEGINNER_ITEM">
+        <MappingFragment StoreEntitySet="BEGINNER_ITEM">
+          <ScalarProperty Name="iClass" ColumnName="iClass" />
+          <ScalarProperty Name="strClass" ColumnName="strClass" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="strItem" ColumnName="strItem" />
+          <ScalarProperty Name="strItem1" ColumnName="strItem1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COEFFICIENT">
+      <EntityTypeMapping TypeName="moyangamePKModel.COEFFICIENT">
+        <MappingFragment StoreEntitySet="COEFFICIENT">
+          <ScalarProperty Name="sClass" ColumnName="sClass" />
+          <ScalarProperty Name="ShortSword" ColumnName="ShortSword" />
+          <ScalarProperty Name="Sword" ColumnName="Sword" />
+          <ScalarProperty Name="Axe" ColumnName="Axe" />
+          <ScalarProperty Name="Club" ColumnName="Club" />
+          <ScalarProperty Name="Spear" ColumnName="Spear" />
+          <ScalarProperty Name="Pole" ColumnName="Pole" />
+          <ScalarProperty Name="Staff" ColumnName="Staff" />
+          <ScalarProperty Name="Bow" ColumnName="Bow" />
+          <ScalarProperty Name="Hp" ColumnName="Hp" />
+          <ScalarProperty Name="Mp" ColumnName="Mp" />
+          <ScalarProperty Name="Sp" ColumnName="Sp" />
+          <ScalarProperty Name="Ac" ColumnName="Ac" />
+          <ScalarProperty Name="Hitrate" ColumnName="Hitrate" />
+          <ScalarProperty Name="Evasionrate" ColumnName="Evasionrate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONCURRENT">
+      <EntityTypeMapping TypeName="moyangamePKModel.CONCURRENT">
+        <MappingFragment StoreEntitySet="CONCURRENT">
+          <ScalarProperty Name="serverid" ColumnName="serverid" />
+          <ScalarProperty Name="zone1_count" ColumnName="zone1_count" />
+          <ScalarProperty Name="zone2_count" ColumnName="zone2_count" />
+          <ScalarProperty Name="zone3_count" ColumnName="zone3_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CURRENTUSER">
+      <EntityTypeMapping TypeName="moyangamePKModel.CURRENTUSER">
+        <MappingFragment StoreEntitySet="CURRENTUSER">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="nServerNo" ColumnName="nServerNo" />
+          <ScalarProperty Name="strServerIP" ColumnName="strServerIP" />
+          <ScalarProperty Name="strClientIP" ColumnName="strClientIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DELLOS_TAX">
+      <EntityTypeMapping TypeName="moyangamePKModel.DELLOS_TAX">
+        <MappingFragment StoreEntitySet="DELLOS_TAX">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="nTax" ColumnName="nTax" />
+          <ScalarProperty Name="nUserMoney" ColumnName="nUserMoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVENT">
+      <EntityTypeMapping TypeName="moyangamePKModel.EVENT">
+        <MappingFragment StoreEntitySet="EVENT">
+          <ScalarProperty Name="ZoneNum" ColumnName="ZoneNum" />
+          <ScalarProperty Name="EventNum" ColumnName="EventNum" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Cond1" ColumnName="Cond1" />
+          <ScalarProperty Name="Cond2" ColumnName="Cond2" />
+          <ScalarProperty Name="Cond3" ColumnName="Cond3" />
+          <ScalarProperty Name="Cond4" ColumnName="Cond4" />
+          <ScalarProperty Name="Cond5" ColumnName="Cond5" />
+          <ScalarProperty Name="Exec1" ColumnName="Exec1" />
+          <ScalarProperty Name="Exec2" ColumnName="Exec2" />
+          <ScalarProperty Name="Exec3" ColumnName="Exec3" />
+          <ScalarProperty Name="Exec4" ColumnName="Exec4" />
+          <ScalarProperty Name="Exec5" ColumnName="Exec5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVENT_TIMES">
+      <EntityTypeMapping TypeName="moyangamePKModel.EVENT_TIMES">
+        <MappingFragment StoreEntitySet="EVENT_TIMES">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="bTime1" ColumnName="bTime1" />
+          <ScalarProperty Name="bTime2" ColumnName="bTime2" />
+          <ScalarProperty Name="bTime3" ColumnName="bTime3" />
+          <ScalarProperty Name="bLvMin" ColumnName="bLvMin" />
+          <ScalarProperty Name="bLVMax" ColumnName="bLVMax" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="AllDays" ColumnName="AllDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FRIEND_LIST">
+      <EntityTypeMapping TypeName="moyangamePKModel.FRIEND_LIST">
+        <MappingFragment StoreEntitySet="FRIEND_LIST">
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="strFriend1" ColumnName="strFriend1" />
+          <ScalarProperty Name="strFriend2" ColumnName="strFriend2" />
+          <ScalarProperty Name="strFriend3" ColumnName="strFriend3" />
+          <ScalarProperty Name="strFriend4" ColumnName="strFriend4" />
+          <ScalarProperty Name="strFriend5" ColumnName="strFriend5" />
+          <ScalarProperty Name="strFriend6" ColumnName="strFriend6" />
+          <ScalarProperty Name="strFriend7" ColumnName="strFriend7" />
+          <ScalarProperty Name="strFriend8" ColumnName="strFriend8" />
+          <ScalarProperty Name="strFriend9" ColumnName="strFriend9" />
+          <ScalarProperty Name="strFriend10" ColumnName="strFriend10" />
+          <ScalarProperty Name="strFriend11" ColumnName="strFriend11" />
+          <ScalarProperty Name="strFriend12" ColumnName="strFriend12" />
+          <ScalarProperty Name="strFriend13" ColumnName="strFriend13" />
+          <ScalarProperty Name="strFriend14" ColumnName="strFriend14" />
+          <ScalarProperty Name="strFriend15" ColumnName="strFriend15" />
+          <ScalarProperty Name="strFriend16" ColumnName="strFriend16" />
+          <ScalarProperty Name="strFriend17" ColumnName="strFriend17" />
+          <ScalarProperty Name="strFriend18" ColumnName="strFriend18" />
+          <ScalarProperty Name="strFriend19" ColumnName="strFriend19" />
+          <ScalarProperty Name="strFriend20" ColumnName="strFriend20" />
+          <ScalarProperty Name="strFriend21" ColumnName="strFriend21" />
+          <ScalarProperty Name="strFriend22" ColumnName="strFriend22" />
+          <ScalarProperty Name="strFriend23" ColumnName="strFriend23" />
+          <ScalarProperty Name="strFriend24" ColumnName="strFriend24" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOME">
+      <EntityTypeMapping TypeName="moyangamePKModel.HOME">
+        <MappingFragment StoreEntitySet="HOME">
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="ElmoZoneX" ColumnName="ElmoZoneX" />
+          <ScalarProperty Name="ElmoZoneZ" ColumnName="ElmoZoneZ" />
+          <ScalarProperty Name="ElmoZoneLX" ColumnName="ElmoZoneLX" />
+          <ScalarProperty Name="ElmoZoneLZ" ColumnName="ElmoZoneLZ" />
+          <ScalarProperty Name="KarusZoneX" ColumnName="KarusZoneX" />
+          <ScalarProperty Name="KarusZoneZ" ColumnName="KarusZoneZ" />
+          <ScalarProperty Name="KarusZoneLX" ColumnName="KarusZoneLX" />
+          <ScalarProperty Name="KarusZoneLZ" ColumnName="KarusZoneLZ" />
+          <ScalarProperty Name="FreeZoneX" ColumnName="FreeZoneX" />
+          <ScalarProperty Name="FreeZoneZ" ColumnName="FreeZoneZ" />
+          <ScalarProperty Name="FreeZoneLX" ColumnName="FreeZoneLX" />
+          <ScalarProperty Name="FreeZoneLZ" ColumnName="FreeZoneLZ" />
+          <ScalarProperty Name="BattleZoneX" ColumnName="BattleZoneX" />
+          <ScalarProperty Name="BattleZoneZ" ColumnName="BattleZoneZ" />
+          <ScalarProperty Name="BattleZoneLX" ColumnName="BattleZoneLX" />
+          <ScalarProperty Name="BattleZoneLZ" ColumnName="BattleZoneLZ" />
+          <ScalarProperty Name="BattleZone2X" ColumnName="BattleZone2X" />
+          <ScalarProperty Name="BattleZone2Z" ColumnName="BattleZone2Z" />
+          <ScalarProperty Name="BattleZone2LX" ColumnName="BattleZone2LX" />
+          <ScalarProperty Name="BattleZone2LZ" ColumnName="BattleZone2LZ" />
+          <ScalarProperty Name="BattleZone3X" ColumnName="BattleZone3X" />
+          <ScalarProperty Name="BattleZone3Z" ColumnName="BattleZone3Z" />
+          <ScalarProperty Name="BattleZone3LX" ColumnName="BattleZone3LX" />
+          <ScalarProperty Name="BattleZone3LZ" ColumnName="BattleZone3LZ" />
+          <ScalarProperty Name="BattleZone4X" ColumnName="BattleZone4X" />
+          <ScalarProperty Name="BattleZone4Z" ColumnName="BattleZone4Z" />
+          <ScalarProperty Name="BattleZone4LX" ColumnName="BattleZone4LX" />
+          <ScalarProperty Name="BattleZone4LZ" ColumnName="BattleZone4LZ" />
+          <ScalarProperty Name="BattleZone5X" ColumnName="BattleZone5X" />
+          <ScalarProperty Name="BattleZone5Z" ColumnName="BattleZone5Z" />
+          <ScalarProperty Name="BattleZone5LX" ColumnName="BattleZone5LX" />
+          <ScalarProperty Name="BattleZone5LZ" ColumnName="BattleZone5LZ" />
+          <ScalarProperty Name="BattleZone6X" ColumnName="BattleZone6X" />
+          <ScalarProperty Name="BattleZone6Z" ColumnName="BattleZone6Z" />
+          <ScalarProperty Name="BattleZone6LX" ColumnName="BattleZone6LX" />
+          <ScalarProperty Name="BattleZone6LZ" ColumnName="BattleZone6LZ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM_EXCHANGE">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEM_EXCHANGE">
+        <MappingFragment StoreEntitySet="ITEM_EXCHANGE">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="nNpcNum" ColumnName="nNpcNum" />
+          <ScalarProperty Name="strNpcName" ColumnName="strNpcName" />
+          <ScalarProperty Name="strNote" ColumnName="strNote" />
+          <ScalarProperty Name="bRandomFlag" ColumnName="bRandomFlag" />
+          <ScalarProperty Name="nOriginItemNum1" ColumnName="nOriginItemNum1" />
+          <ScalarProperty Name="nOriginItemCount1" ColumnName="nOriginItemCount1" />
+          <ScalarProperty Name="nOriginItemNum2" ColumnName="nOriginItemNum2" />
+          <ScalarProperty Name="nOriginItemCount2" ColumnName="nOriginItemCount2" />
+          <ScalarProperty Name="nOriginItemNum3" ColumnName="nOriginItemNum3" />
+          <ScalarProperty Name="nOriginItemCount3" ColumnName="nOriginItemCount3" />
+          <ScalarProperty Name="nOriginItemNum4" ColumnName="nOriginItemNum4" />
+          <ScalarProperty Name="nOriginItemCount4" ColumnName="nOriginItemCount4" />
+          <ScalarProperty Name="nOriginItemNum5" ColumnName="nOriginItemNum5" />
+          <ScalarProperty Name="nOriginItemCount5" ColumnName="nOriginItemCount5" />
+          <ScalarProperty Name="nOriginItemNum6" ColumnName="nOriginItemNum6" />
+          <ScalarProperty Name="nOriginItemCount6" ColumnName="nOriginItemCount6" />
+          <ScalarProperty Name="nOriginItemNum7" ColumnName="nOriginItemNum7" />
+          <ScalarProperty Name="nOriginItemCount7" ColumnName="nOriginItemCount7" />
+          <ScalarProperty Name="nOriginItemNum8" ColumnName="nOriginItemNum8" />
+          <ScalarProperty Name="nOriginItemCount8" ColumnName="nOriginItemCount8" />
+          <ScalarProperty Name="nOriginItemNum9" ColumnName="nOriginItemNum9" />
+          <ScalarProperty Name="nOriginItemCount9" ColumnName="nOriginItemCount9" />
+          <ScalarProperty Name="nOriginItemNum10" ColumnName="nOriginItemNum10" />
+          <ScalarProperty Name="nOriginItemCount10" ColumnName="nOriginItemCount10" />
+          <ScalarProperty Name="nOriginItemNum11" ColumnName="nOriginItemNum11" />
+          <ScalarProperty Name="nOriginItemCount11" ColumnName="nOriginItemCount11" />
+          <ScalarProperty Name="nExchangeItemNum1" ColumnName="nExchangeItemNum1" />
+          <ScalarProperty Name="nExchangeItemCount1" ColumnName="nExchangeItemCount1" />
+          <ScalarProperty Name="nExchangeItemNum2" ColumnName="nExchangeItemNum2" />
+          <ScalarProperty Name="nExchangeItemCount2" ColumnName="nExchangeItemCount2" />
+          <ScalarProperty Name="nExchangeItemNum3" ColumnName="nExchangeItemNum3" />
+          <ScalarProperty Name="nExchangeItemCount3" ColumnName="nExchangeItemCount3" />
+          <ScalarProperty Name="nExchangeItemNum4" ColumnName="nExchangeItemNum4" />
+          <ScalarProperty Name="nExchangeItemCount4" ColumnName="nExchangeItemCount4" />
+          <ScalarProperty Name="nExchangeItemNum5" ColumnName="nExchangeItemNum5" />
+          <ScalarProperty Name="nExchangeItemCount5" ColumnName="nExchangeItemCount5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM_GROUP">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEM_GROUP">
+        <MappingFragment StoreEntitySet="ITEM_GROUP">
+          <ScalarProperty Name="group" ColumnName="group" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="item1" ColumnName="item1" />
+          <ScalarProperty Name="item2" ColumnName="item2" />
+          <ScalarProperty Name="item3" ColumnName="item3" />
+          <ScalarProperty Name="item4" ColumnName="item4" />
+          <ScalarProperty Name="item5" ColumnName="item5" />
+          <ScalarProperty Name="item6" ColumnName="item6" />
+          <ScalarProperty Name="item7" ColumnName="item7" />
+          <ScalarProperty Name="item8" ColumnName="item8" />
+          <ScalarProperty Name="item9" ColumnName="item9" />
+          <ScalarProperty Name="item10" ColumnName="item10" />
+          <ScalarProperty Name="item11" ColumnName="item11" />
+          <ScalarProperty Name="item12" ColumnName="item12" />
+          <ScalarProperty Name="item13" ColumnName="item13" />
+          <ScalarProperty Name="item14" ColumnName="item14" />
+          <ScalarProperty Name="item15" ColumnName="item15" />
+          <ScalarProperty Name="item16" ColumnName="item16" />
+          <ScalarProperty Name="item17" ColumnName="item17" />
+          <ScalarProperty Name="item18" ColumnName="item18" />
+          <ScalarProperty Name="item19" ColumnName="item19" />
+          <ScalarProperty Name="item20" ColumnName="item20" />
+          <ScalarProperty Name="item21" ColumnName="item21" />
+          <ScalarProperty Name="item22" ColumnName="item22" />
+          <ScalarProperty Name="item23" ColumnName="item23" />
+          <ScalarProperty Name="item24" ColumnName="item24" />
+          <ScalarProperty Name="item25" ColumnName="item25" />
+          <ScalarProperty Name="item26" ColumnName="item26" />
+          <ScalarProperty Name="item27" ColumnName="item27" />
+          <ScalarProperty Name="item28" ColumnName="item28" />
+          <ScalarProperty Name="item29" ColumnName="item29" />
+          <ScalarProperty Name="item30" ColumnName="item30" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM_OP">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEM_OP">
+        <MappingFragment StoreEntitySet="ITEM_OP">
+          <ScalarProperty Name="nItemID" ColumnName="nItemID" />
+          <ScalarProperty Name="bTriggerType" ColumnName="bTriggerType" />
+          <ScalarProperty Name="nSkillID" ColumnName="nSkillID" />
+          <ScalarProperty Name="bTriggerRate" ColumnName="bTriggerRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM_UPGRADE">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEM_UPGRADE">
+        <MappingFragment StoreEntitySet="ITEM_UPGRADE">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="nNPCNum" ColumnName="nNPCNum" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="strNote" ColumnName="strNote" />
+          <ScalarProperty Name="nOriginType" ColumnName="nOriginType" />
+          <ScalarProperty Name="nOriginItem" ColumnName="nOriginItem" />
+          <ScalarProperty Name="nReqItem1" ColumnName="nReqItem1" />
+          <ScalarProperty Name="nReqItem2" ColumnName="nReqItem2" />
+          <ScalarProperty Name="nReqItem3" ColumnName="nReqItem3" />
+          <ScalarProperty Name="nReqItem4" ColumnName="nReqItem4" />
+          <ScalarProperty Name="nReqItem5" ColumnName="nReqItem5" />
+          <ScalarProperty Name="nReqItem6" ColumnName="nReqItem6" />
+          <ScalarProperty Name="nReqItem7" ColumnName="nReqItem7" />
+          <ScalarProperty Name="nReqItem8" ColumnName="nReqItem8" />
+          <ScalarProperty Name="nReqNoah" ColumnName="nReqNoah" />
+          <ScalarProperty Name="bRateType" ColumnName="bRateType" />
+          <ScalarProperty Name="nGenRate" ColumnName="nGenRate" />
+          <ScalarProperty Name="nGiveItem" ColumnName="nGiveItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEMUP_PROBABILITY">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEMUP_PROBABILITY">
+        <MappingFragment StoreEntitySet="ITEMUP_PROBABILITY">
+          <ScalarProperty Name="bType" ColumnName="bType" />
+          <ScalarProperty Name="nMaxSuccess" ColumnName="nMaxSuccess" />
+          <ScalarProperty Name="nMaxFail" ColumnName="nMaxFail" />
+          <ScalarProperty Name="nCurSuccess" ColumnName="nCurSuccess" />
+          <ScalarProperty Name="nCurFail" ColumnName="nCurFail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEMv2">
+      <EntityTypeMapping TypeName="moyangamePKModel.ITEMv2">
+        <MappingFragment StoreEntitySet="ITEMv2">
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="Slot" ColumnName="Slot" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Delay" ColumnName="Delay" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="BuyPrice" ColumnName="BuyPrice" />
+          <ScalarProperty Name="SellPrice" ColumnName="SellPrice" />
+          <ScalarProperty Name="Ac" ColumnName="Ac" />
+          <ScalarProperty Name="Countable" ColumnName="Countable" />
+          <ScalarProperty Name="Effect1" ColumnName="Effect1" />
+          <ScalarProperty Name="Effect2" ColumnName="Effect2" />
+          <ScalarProperty Name="ReqLevel" ColumnName="ReqLevel" />
+          <ScalarProperty Name="ReqLevelMax" ColumnName="ReqLevelMax" />
+          <ScalarProperty Name="ReqRank" ColumnName="ReqRank" />
+          <ScalarProperty Name="ReqTitle" ColumnName="ReqTitle" />
+          <ScalarProperty Name="ReqStr" ColumnName="ReqStr" />
+          <ScalarProperty Name="ReqSta" ColumnName="ReqSta" />
+          <ScalarProperty Name="ReqDex" ColumnName="ReqDex" />
+          <ScalarProperty Name="ReqIntel" ColumnName="ReqIntel" />
+          <ScalarProperty Name="ReqCha" ColumnName="ReqCha" />
+          <ScalarProperty Name="SellingGroup" ColumnName="SellingGroup" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="Hitrate" ColumnName="Hitrate" />
+          <ScalarProperty Name="Evasionrate" ColumnName="Evasionrate" />
+          <ScalarProperty Name="DaggerAc" ColumnName="DaggerAc" />
+          <ScalarProperty Name="SwordAc" ColumnName="SwordAc" />
+          <ScalarProperty Name="MaceAc" ColumnName="MaceAc" />
+          <ScalarProperty Name="AxeAc" ColumnName="AxeAc" />
+          <ScalarProperty Name="SpearAc" ColumnName="SpearAc" />
+          <ScalarProperty Name="BowAc" ColumnName="BowAc" />
+          <ScalarProperty Name="FireDamage" ColumnName="FireDamage" />
+          <ScalarProperty Name="IceDamage" ColumnName="IceDamage" />
+          <ScalarProperty Name="LightningDamage" ColumnName="LightningDamage" />
+          <ScalarProperty Name="PoisonDamage" ColumnName="PoisonDamage" />
+          <ScalarProperty Name="HPDrain" ColumnName="HPDrain" />
+          <ScalarProperty Name="MPDamage" ColumnName="MPDamage" />
+          <ScalarProperty Name="MPDrain" ColumnName="MPDrain" />
+          <ScalarProperty Name="MirrorDamage" ColumnName="MirrorDamage" />
+          <ScalarProperty Name="StrB" ColumnName="StrB" />
+          <ScalarProperty Name="StaB" ColumnName="StaB" />
+          <ScalarProperty Name="DexB" ColumnName="DexB" />
+          <ScalarProperty Name="IntelB" ColumnName="IntelB" />
+          <ScalarProperty Name="ChaB" ColumnName="ChaB" />
+          <ScalarProperty Name="MaxHpB" ColumnName="MaxHpB" />
+          <ScalarProperty Name="MaxMpB" ColumnName="MaxMpB" />
+          <ScalarProperty Name="FireR" ColumnName="FireR" />
+          <ScalarProperty Name="ColdR" ColumnName="ColdR" />
+          <ScalarProperty Name="LightningR" ColumnName="LightningR" />
+          <ScalarProperty Name="MagicR" ColumnName="MagicR" />
+          <ScalarProperty Name="PoisonR" ColumnName="PoisonR" />
+          <ScalarProperty Name="CurseR" ColumnName="CurseR" />
+          <ScalarProperty Name="ext" ColumnName="ext" />
+          <ScalarProperty Name="JamadarAC" ColumnName="JamadarAC" />
+          <ScalarProperty Name="itemclass" ColumnName="itemclass" />
+          <ScalarProperty Name="itemext" ColumnName="itemext" />
+          <ScalarProperty Name="UpgradeNotice" ColumnName="UpgradeNotice" />
+          <ScalarProperty Name="NPbuyPrice" ColumnName="NPbuyPrice" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_MONSTER_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_MONSTER_ITEM">
+        <MappingFragment StoreEntitySet="K_MONSTER_ITEM">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="iItem01" ColumnName="iItem01" />
+          <ScalarProperty Name="sPersent01" ColumnName="sPersent01" />
+          <ScalarProperty Name="iItem02" ColumnName="iItem02" />
+          <ScalarProperty Name="sPersent02" ColumnName="sPersent02" />
+          <ScalarProperty Name="iItem03" ColumnName="iItem03" />
+          <ScalarProperty Name="sPersent03" ColumnName="sPersent03" />
+          <ScalarProperty Name="iItem04" ColumnName="iItem04" />
+          <ScalarProperty Name="sPersent04" ColumnName="sPersent04" />
+          <ScalarProperty Name="iItem05" ColumnName="iItem05" />
+          <ScalarProperty Name="sPersent05" ColumnName="sPersent05" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_MONSTER_yedek">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_MONSTER_yedek">
+        <MappingFragment StoreEntitySet="K_MONSTER_yedek">
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="sPid" ColumnName="sPid" />
+          <ScalarProperty Name="sSize" ColumnName="sSize" />
+          <ScalarProperty Name="iWeapon1" ColumnName="iWeapon1" />
+          <ScalarProperty Name="iWeapon2" ColumnName="iWeapon2" />
+          <ScalarProperty Name="byGroup" ColumnName="byGroup" />
+          <ScalarProperty Name="byActType" ColumnName="byActType" />
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="byFamily" ColumnName="byFamily" />
+          <ScalarProperty Name="byRank" ColumnName="byRank" />
+          <ScalarProperty Name="byTitle" ColumnName="byTitle" />
+          <ScalarProperty Name="iSellingGroup" ColumnName="iSellingGroup" />
+          <ScalarProperty Name="sLevel" ColumnName="sLevel" />
+          <ScalarProperty Name="iExp" ColumnName="iExp" />
+          <ScalarProperty Name="iLoyalty" ColumnName="iLoyalty" />
+          <ScalarProperty Name="iHpPoint" ColumnName="iHpPoint" />
+          <ScalarProperty Name="sMpPoint" ColumnName="sMpPoint" />
+          <ScalarProperty Name="sAtk" ColumnName="sAtk" />
+          <ScalarProperty Name="sAc" ColumnName="sAc" />
+          <ScalarProperty Name="sHitRate" ColumnName="sHitRate" />
+          <ScalarProperty Name="sEvadeRate" ColumnName="sEvadeRate" />
+          <ScalarProperty Name="sDamage" ColumnName="sDamage" />
+          <ScalarProperty Name="sAttackDelay" ColumnName="sAttackDelay" />
+          <ScalarProperty Name="bySpeed1" ColumnName="bySpeed1" />
+          <ScalarProperty Name="bySpeed2" ColumnName="bySpeed2" />
+          <ScalarProperty Name="sStandtime" ColumnName="sStandtime" />
+          <ScalarProperty Name="sItem" ColumnName="sItem" />
+          <ScalarProperty Name="iMagic1" ColumnName="iMagic1" />
+          <ScalarProperty Name="iMagic2" ColumnName="iMagic2" />
+          <ScalarProperty Name="iMagic3" ColumnName="iMagic3" />
+          <ScalarProperty Name="sFireR" ColumnName="sFireR" />
+          <ScalarProperty Name="sColdR" ColumnName="sColdR" />
+          <ScalarProperty Name="sLightningR" ColumnName="sLightningR" />
+          <ScalarProperty Name="sMagicR" ColumnName="sMagicR" />
+          <ScalarProperty Name="sDiseaseR" ColumnName="sDiseaseR" />
+          <ScalarProperty Name="sPoisonR" ColumnName="sPoisonR" />
+          <ScalarProperty Name="sBulk" ColumnName="sBulk" />
+          <ScalarProperty Name="byAttackRange" ColumnName="byAttackRange" />
+          <ScalarProperty Name="bySearchRange" ColumnName="bySearchRange" />
+          <ScalarProperty Name="byTracingRange" ColumnName="byTracingRange" />
+          <ScalarProperty Name="iMoney" ColumnName="iMoney" />
+          <ScalarProperty Name="byDirectAttack" ColumnName="byDirectAttack" />
+          <ScalarProperty Name="byMagicAttack" ColumnName="byMagicAttack" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_NPC">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_NPC">
+        <MappingFragment StoreEntitySet="K_NPC">
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="sPid" ColumnName="sPid" />
+          <ScalarProperty Name="sSize" ColumnName="sSize" />
+          <ScalarProperty Name="iWeapon1" ColumnName="iWeapon1" />
+          <ScalarProperty Name="iWeapon2" ColumnName="iWeapon2" />
+          <ScalarProperty Name="byGroup" ColumnName="byGroup" />
+          <ScalarProperty Name="byActType" ColumnName="byActType" />
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="byFamily" ColumnName="byFamily" />
+          <ScalarProperty Name="byRank" ColumnName="byRank" />
+          <ScalarProperty Name="byTitle" ColumnName="byTitle" />
+          <ScalarProperty Name="iSellingGroup" ColumnName="iSellingGroup" />
+          <ScalarProperty Name="sLevel" ColumnName="sLevel" />
+          <ScalarProperty Name="iExp" ColumnName="iExp" />
+          <ScalarProperty Name="iLoyalty" ColumnName="iLoyalty" />
+          <ScalarProperty Name="iHpPoint" ColumnName="iHpPoint" />
+          <ScalarProperty Name="sMpPoint" ColumnName="sMpPoint" />
+          <ScalarProperty Name="sAtk" ColumnName="sAtk" />
+          <ScalarProperty Name="sAc" ColumnName="sAc" />
+          <ScalarProperty Name="sHitRate" ColumnName="sHitRate" />
+          <ScalarProperty Name="sEvadeRate" ColumnName="sEvadeRate" />
+          <ScalarProperty Name="sDamage" ColumnName="sDamage" />
+          <ScalarProperty Name="sAttackDelay" ColumnName="sAttackDelay" />
+          <ScalarProperty Name="m_sSpeed" ColumnName="m_sSpeed" />
+          <ScalarProperty Name="bySpeed1" ColumnName="bySpeed1" />
+          <ScalarProperty Name="bySpeed2" ColumnName="bySpeed2" />
+          <ScalarProperty Name="sStandtime" ColumnName="sStandtime" />
+          <ScalarProperty Name="iMagic1" ColumnName="iMagic1" />
+          <ScalarProperty Name="iMagic2" ColumnName="iMagic2" />
+          <ScalarProperty Name="iMagic3" ColumnName="iMagic3" />
+          <ScalarProperty Name="sFireR" ColumnName="sFireR" />
+          <ScalarProperty Name="sColdR" ColumnName="sColdR" />
+          <ScalarProperty Name="sLightningR" ColumnName="sLightningR" />
+          <ScalarProperty Name="sMagicR" ColumnName="sMagicR" />
+          <ScalarProperty Name="sDiseaseR" ColumnName="sDiseaseR" />
+          <ScalarProperty Name="sPoisonR" ColumnName="sPoisonR" />
+          <ScalarProperty Name="sLightR" ColumnName="sLightR" />
+          <ScalarProperty Name="sBulk" ColumnName="sBulk" />
+          <ScalarProperty Name="byAttackRange" ColumnName="byAttackRange" />
+          <ScalarProperty Name="bySearchRange" ColumnName="bySearchRange" />
+          <ScalarProperty Name="byTracingRange" ColumnName="byTracingRange" />
+          <ScalarProperty Name="iMoney" ColumnName="iMoney" />
+          <ScalarProperty Name="sItem" ColumnName="sItem" />
+          <ScalarProperty Name="byDirectAttack" ColumnName="byDirectAttack" />
+          <ScalarProperty Name="byMagicAttack" ColumnName="byMagicAttack" />
+          <ScalarProperty Name="byMoneyType" ColumnName="byMoneyType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_NPC_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_NPC_ITEM">
+        <MappingFragment StoreEntitySet="K_NPC_ITEM">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="iItem01" ColumnName="iItem01" />
+          <ScalarProperty Name="sPersent01" ColumnName="sPersent01" />
+          <ScalarProperty Name="iItem02" ColumnName="iItem02" />
+          <ScalarProperty Name="sPersent02" ColumnName="sPersent02" />
+          <ScalarProperty Name="iItem03" ColumnName="iItem03" />
+          <ScalarProperty Name="sPersent03" ColumnName="sPersent03" />
+          <ScalarProperty Name="iItem04" ColumnName="iItem04" />
+          <ScalarProperty Name="sPersent04" ColumnName="sPersent04" />
+          <ScalarProperty Name="iItem05" ColumnName="iItem05" />
+          <ScalarProperty Name="sPersent05" ColumnName="sPersent05" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_NPC_yedek">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_NPC_yedek">
+        <MappingFragment StoreEntitySet="K_NPC_yedek">
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="sPid" ColumnName="sPid" />
+          <ScalarProperty Name="sSize" ColumnName="sSize" />
+          <ScalarProperty Name="iWeapon1" ColumnName="iWeapon1" />
+          <ScalarProperty Name="iWeapon2" ColumnName="iWeapon2" />
+          <ScalarProperty Name="byGroup" ColumnName="byGroup" />
+          <ScalarProperty Name="byActType" ColumnName="byActType" />
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="byFamily" ColumnName="byFamily" />
+          <ScalarProperty Name="byRank" ColumnName="byRank" />
+          <ScalarProperty Name="byTitle" ColumnName="byTitle" />
+          <ScalarProperty Name="iSellingGroup" ColumnName="iSellingGroup" />
+          <ScalarProperty Name="sLevel" ColumnName="sLevel" />
+          <ScalarProperty Name="iExp" ColumnName="iExp" />
+          <ScalarProperty Name="iLoyalty" ColumnName="iLoyalty" />
+          <ScalarProperty Name="iHpPoint" ColumnName="iHpPoint" />
+          <ScalarProperty Name="sMpPoint" ColumnName="sMpPoint" />
+          <ScalarProperty Name="sAtk" ColumnName="sAtk" />
+          <ScalarProperty Name="sAc" ColumnName="sAc" />
+          <ScalarProperty Name="sHitRate" ColumnName="sHitRate" />
+          <ScalarProperty Name="sEvadeRate" ColumnName="sEvadeRate" />
+          <ScalarProperty Name="sDamage" ColumnName="sDamage" />
+          <ScalarProperty Name="sAttackDelay" ColumnName="sAttackDelay" />
+          <ScalarProperty Name="bySpeed1" ColumnName="bySpeed1" />
+          <ScalarProperty Name="bySpeed2" ColumnName="bySpeed2" />
+          <ScalarProperty Name="sStandtime" ColumnName="sStandtime" />
+          <ScalarProperty Name="sItem" ColumnName="sItem" />
+          <ScalarProperty Name="iMagic1" ColumnName="iMagic1" />
+          <ScalarProperty Name="iMagic2" ColumnName="iMagic2" />
+          <ScalarProperty Name="iMagic3" ColumnName="iMagic3" />
+          <ScalarProperty Name="sFireR" ColumnName="sFireR" />
+          <ScalarProperty Name="sColdR" ColumnName="sColdR" />
+          <ScalarProperty Name="sLightningR" ColumnName="sLightningR" />
+          <ScalarProperty Name="sMagicR" ColumnName="sMagicR" />
+          <ScalarProperty Name="sDiseaseR" ColumnName="sDiseaseR" />
+          <ScalarProperty Name="sPoisonR" ColumnName="sPoisonR" />
+          <ScalarProperty Name="sBulk" ColumnName="sBulk" />
+          <ScalarProperty Name="byAttackRange" ColumnName="byAttackRange" />
+          <ScalarProperty Name="bySearchRange" ColumnName="bySearchRange" />
+          <ScalarProperty Name="byTracingRange" ColumnName="byTracingRange" />
+          <ScalarProperty Name="iMoney" ColumnName="iMoney" />
+          <ScalarProperty Name="byDirectAttack" ColumnName="byDirectAttack" />
+          <ScalarProperty Name="byMagicAttack" ColumnName="byMagicAttack" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_OBJECTEVENT">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_OBJECTEVENT">
+        <MappingFragment StoreEntitySet="K_OBJECTEVENT">
+          <ScalarProperty Name="sZoneNo" ColumnName="sZoneNo" />
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="byLife" ColumnName="byLife" />
+          <ScalarProperty Name="sBelong" ColumnName="sBelong" />
+          <ScalarProperty Name="sType" ColumnName="sType" />
+          <ScalarProperty Name="sControlNpcId" ColumnName="sControlNpcId" />
+          <ScalarProperty Name="sStatus" ColumnName="sStatus" />
+          <ScalarProperty Name="sPosX" ColumnName="sPosX" />
+          <ScalarProperty Name="sPosY" ColumnName="sPosY" />
+          <ScalarProperty Name="sPosZ" ColumnName="sPosZ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_OBJECTPOS">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_OBJECTPOS">
+        <MappingFragment StoreEntitySet="K_OBJECTPOS">
+          <ScalarProperty Name="ZoneID" ColumnName="ZoneID" />
+          <ScalarProperty Name="Belong" ColumnName="Belong" />
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ControlNpcID" ColumnName="ControlNpcID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PosX" ColumnName="PosX" />
+          <ScalarProperty Name="PosY" ColumnName="PosY" />
+          <ScalarProperty Name="PosZ" ColumnName="PosZ" />
+          <ScalarProperty Name="byLife" ColumnName="byLife" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="K_WARPINFO">
+      <EntityTypeMapping TypeName="moyangamePKModel.K_WARPINFO">
+        <MappingFragment StoreEntitySet="K_WARPINFO">
+          <ScalarProperty Name="sWarpID" ColumnName="sWarpID" />
+          <ScalarProperty Name="strWarpName" ColumnName="strWarpName" />
+          <ScalarProperty Name="strAnnounce" ColumnName="strAnnounce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KING_BALLOT_BOX">
+      <EntityTypeMapping TypeName="moyangamePKModel.KING_BALLOT_BOX">
+        <MappingFragment StoreEntitySet="KING_BALLOT_BOX">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="byNation" ColumnName="byNation" />
+          <ScalarProperty Name="strCandidacyID" ColumnName="strCandidacyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KING_CANDIDACY_NOTICE_BOARD">
+      <EntityTypeMapping TypeName="moyangamePKModel.KING_CANDIDACY_NOTICE_BOARD">
+        <MappingFragment StoreEntitySet="KING_CANDIDACY_NOTICE_BOARD">
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="byNation" ColumnName="byNation" />
+          <ScalarProperty Name="sNoticeLen" ColumnName="sNoticeLen" />
+          <ScalarProperty Name="strNotice" ColumnName="strNotice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KING_ELECTION_LIST">
+      <EntityTypeMapping TypeName="moyangamePKModel.KING_ELECTION_LIST">
+        <MappingFragment StoreEntitySet="KING_ELECTION_LIST">
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="byNation" ColumnName="byNation" />
+          <ScalarProperty Name="nKnights" ColumnName="nKnights" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="nMoney" ColumnName="nMoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KING_SYSTEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.KING_SYSTEM">
+        <MappingFragment StoreEntitySet="KING_SYSTEM">
+          <ScalarProperty Name="byNation" ColumnName="byNation" />
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="sYear" ColumnName="sYear" />
+          <ScalarProperty Name="byMonth" ColumnName="byMonth" />
+          <ScalarProperty Name="byDay" ColumnName="byDay" />
+          <ScalarProperty Name="byHour" ColumnName="byHour" />
+          <ScalarProperty Name="byMinute" ColumnName="byMinute" />
+          <ScalarProperty Name="byImType" ColumnName="byImType" />
+          <ScalarProperty Name="sImYear" ColumnName="sImYear" />
+          <ScalarProperty Name="byImMonth" ColumnName="byImMonth" />
+          <ScalarProperty Name="byImDay" ColumnName="byImDay" />
+          <ScalarProperty Name="byImHour" ColumnName="byImHour" />
+          <ScalarProperty Name="byImMinute" ColumnName="byImMinute" />
+          <ScalarProperty Name="byNoahEvent" ColumnName="byNoahEvent" />
+          <ScalarProperty Name="byNoahEvent_Day" ColumnName="byNoahEvent_Day" />
+          <ScalarProperty Name="byNoahEvent_Hour" ColumnName="byNoahEvent_Hour" />
+          <ScalarProperty Name="byNoahEvent_Minute" ColumnName="byNoahEvent_Minute" />
+          <ScalarProperty Name="sNoahEvent_Duration" ColumnName="sNoahEvent_Duration" />
+          <ScalarProperty Name="byExpEvent" ColumnName="byExpEvent" />
+          <ScalarProperty Name="byExpEvent_Day" ColumnName="byExpEvent_Day" />
+          <ScalarProperty Name="byExpEvent_Hour" ColumnName="byExpEvent_Hour" />
+          <ScalarProperty Name="byExpEvent_Minute" ColumnName="byExpEvent_Minute" />
+          <ScalarProperty Name="sExpEvent_Duration" ColumnName="sExpEvent_Duration" />
+          <ScalarProperty Name="nTribute" ColumnName="nTribute" />
+          <ScalarProperty Name="byTerritoryTariff" ColumnName="byTerritoryTariff" />
+          <ScalarProperty Name="nTerritoryTax" ColumnName="nTerritoryTax" />
+          <ScalarProperty Name="nNationalTreasury" ColumnName="nNationalTreasury" />
+          <ScalarProperty Name="strKingName" ColumnName="strKingName" />
+          <ScalarProperty Name="strImRequestID" ColumnName="strImRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KNIGHTS_CAPE">
+      <EntityTypeMapping TypeName="moyangamePKModel.KNIGHTS_CAPE">
+        <MappingFragment StoreEntitySet="KNIGHTS_CAPE">
+          <ScalarProperty Name="sCapeIndex" ColumnName="sCapeIndex" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="nBuyPrice" ColumnName="nBuyPrice" />
+          <ScalarProperty Name="nDuration" ColumnName="nDuration" />
+          <ScalarProperty Name="byGrade" ColumnName="byGrade" />
+          <ScalarProperty Name="nBuyLoyalty" ColumnName="nBuyLoyalty" />
+          <ScalarProperty Name="byRanking" ColumnName="byRanking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KNIGHTS_RATING">
+      <EntityTypeMapping TypeName="moyangamePKModel.KNIGHTS_RATING">
+        <MappingFragment StoreEntitySet="KNIGHTS_RATING">
+          <ScalarProperty Name="nRank" ColumnName="nRank" />
+          <ScalarProperty Name="shIndex" ColumnName="shIndex" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="nPoints" ColumnName="nPoints" />
+          <ScalarProperty Name="nClanPointFund" ColumnName="nClanPointFund" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KNIGHTS_SIEGE_WARFARE">
+      <EntityTypeMapping TypeName="moyangamePKModel.KNIGHTS_SIEGE_WARFARE">
+        <MappingFragment StoreEntitySet="KNIGHTS_SIEGE_WARFARE">
+          <ScalarProperty Name="sCastleIndex" ColumnName="sCastleIndex" />
+          <ScalarProperty Name="sMasterKnights" ColumnName="sMasterKnights" />
+          <ScalarProperty Name="bySiegeType" ColumnName="bySiegeType" />
+          <ScalarProperty Name="byWarDay" ColumnName="byWarDay" />
+          <ScalarProperty Name="byWarTime" ColumnName="byWarTime" />
+          <ScalarProperty Name="byWarMinute" ColumnName="byWarMinute" />
+          <ScalarProperty Name="sChallengeList_1" ColumnName="sChallengeList_1" />
+          <ScalarProperty Name="sChallengeList_2" ColumnName="sChallengeList_2" />
+          <ScalarProperty Name="sChallengeList_3" ColumnName="sChallengeList_3" />
+          <ScalarProperty Name="sChallengeList_4" ColumnName="sChallengeList_4" />
+          <ScalarProperty Name="sChallengeList_5" ColumnName="sChallengeList_5" />
+          <ScalarProperty Name="sChallengeList_6" ColumnName="sChallengeList_6" />
+          <ScalarProperty Name="sChallengeList_7" ColumnName="sChallengeList_7" />
+          <ScalarProperty Name="sChallengeList_8" ColumnName="sChallengeList_8" />
+          <ScalarProperty Name="sChallengeList_9" ColumnName="sChallengeList_9" />
+          <ScalarProperty Name="sChallengeList_10" ColumnName="sChallengeList_10" />
+          <ScalarProperty Name="byWarRequestDay" ColumnName="byWarRequestDay" />
+          <ScalarProperty Name="byWarRequestTime" ColumnName="byWarRequestTime" />
+          <ScalarProperty Name="byWarRequestMinute" ColumnName="byWarRequestMinute" />
+          <ScalarProperty Name="byGuerrillaWarDay" ColumnName="byGuerrillaWarDay" />
+          <ScalarProperty Name="byGuerrillaWarTime" ColumnName="byGuerrillaWarTime" />
+          <ScalarProperty Name="byGuerrillaWarMinute" ColumnName="byGuerrillaWarMinute" />
+          <ScalarProperty Name="strChallengeList" ColumnName="strChallengeList" />
+          <ScalarProperty Name="sMoradonTariff" ColumnName="sMoradonTariff" />
+          <ScalarProperty Name="sDellosTariff" ColumnName="sDellosTariff" />
+          <ScalarProperty Name="nDungeonCharge" ColumnName="nDungeonCharge" />
+          <ScalarProperty Name="nMoradonTax" ColumnName="nMoradonTax" />
+          <ScalarProperty Name="nDellosTax" ColumnName="nDellosTax" />
+          <ScalarProperty Name="sRequestList_1" ColumnName="sRequestList_1" />
+          <ScalarProperty Name="sRequestList_2" ColumnName="sRequestList_2" />
+          <ScalarProperty Name="sRequestList_3" ColumnName="sRequestList_3" />
+          <ScalarProperty Name="sRequestList_4" ColumnName="sRequestList_4" />
+          <ScalarProperty Name="sRequestList_5" ColumnName="sRequestList_5" />
+          <ScalarProperty Name="sRequestList_6" ColumnName="sRequestList_6" />
+          <ScalarProperty Name="sRequestList_7" ColumnName="sRequestList_7" />
+          <ScalarProperty Name="sRequestList_8" ColumnName="sRequestList_8" />
+          <ScalarProperty Name="sRequestList_9" ColumnName="sRequestList_9" />
+          <ScalarProperty Name="sRequestList_10" ColumnName="sRequestList_10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KNIGHTS_USER">
+      <EntityTypeMapping TypeName="moyangamePKModel.KNIGHTS_USER">
+        <MappingFragment StoreEntitySet="KNIGHTS_USER">
+          <ScalarProperty Name="sIDNum" ColumnName="sIDNum" />
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="nDonatedNP" ColumnName="nDonatedNP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LEVEL_UP">
+      <EntityTypeMapping TypeName="moyangamePKModel.LEVEL_UP">
+        <MappingFragment StoreEntitySet="LEVEL_UP">
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="Exp" ColumnName="Exp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC">
+        <MappingFragment StoreEntitySet="MAGIC">
+          <ScalarProperty Name="MagicNum" ColumnName="MagicNum" />
+          <ScalarProperty Name="EnName" ColumnName="EnName" />
+          <ScalarProperty Name="KrName" ColumnName="KrName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BeforeAction" ColumnName="BeforeAction" />
+          <ScalarProperty Name="TargetAction" ColumnName="TargetAction" />
+          <ScalarProperty Name="SelfEffect" ColumnName="SelfEffect" />
+          <ScalarProperty Name="FlyingEffect" ColumnName="FlyingEffect" />
+          <ScalarProperty Name="TargetEffect" ColumnName="TargetEffect" />
+          <ScalarProperty Name="Moral" ColumnName="Moral" />
+          <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+          <ScalarProperty Name="Skill" ColumnName="Skill" />
+          <ScalarProperty Name="Msp" ColumnName="Msp" />
+          <ScalarProperty Name="HP" ColumnName="HP" />
+          <ScalarProperty Name="ItemGroup" ColumnName="ItemGroup" />
+          <ScalarProperty Name="UseItem" ColumnName="UseItem" />
+          <ScalarProperty Name="CastTime" ColumnName="CastTime" />
+          <ScalarProperty Name="ReCastTime" ColumnName="ReCastTime" />
+          <ScalarProperty Name="SuccessRate" ColumnName="SuccessRate" />
+          <ScalarProperty Name="Type1" ColumnName="Type1" />
+          <ScalarProperty Name="Type2" ColumnName="Type2" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Etc" ColumnName="Etc" />
+          <ScalarProperty Name="UseStanding" ColumnName="UseStanding" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE1">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE1">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE1">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="HitRate" ColumnName="HitRate" />
+          <ScalarProperty Name="Hit" ColumnName="Hit" />
+          <ScalarProperty Name="AddDamage" ColumnName="AddDamage" />
+          <ScalarProperty Name="Delay" ColumnName="Delay" />
+          <ScalarProperty Name="ComboType" ColumnName="ComboType" />
+          <ScalarProperty Name="ComboCount" ColumnName="ComboCount" />
+          <ScalarProperty Name="ComboDamage" ColumnName="ComboDamage" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="unk1" ColumnName="unk1" />
+          <ScalarProperty Name="unk2" ColumnName="unk2" />
+          <ScalarProperty Name="unk3" ColumnName="unk3" />
+          <ScalarProperty Name="unk4" ColumnName="unk4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE11">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE11">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE11">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="HitRate" ColumnName="HitRate" />
+          <ScalarProperty Name="Hit" ColumnName="Hit" />
+          <ScalarProperty Name="AddDamage" ColumnName="AddDamage" />
+          <ScalarProperty Name="Delay" ColumnName="Delay" />
+          <ScalarProperty Name="ComboType" ColumnName="ComboType" />
+          <ScalarProperty Name="ComboCount" ColumnName="ComboCount" />
+          <ScalarProperty Name="ComboDamage" ColumnName="ComboDamage" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE2">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE2">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE2">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HitType" ColumnName="HitType" />
+          <ScalarProperty Name="HitRate" ColumnName="HitRate" />
+          <ScalarProperty Name="AddDamage" ColumnName="AddDamage" />
+          <ScalarProperty Name="AddRange" ColumnName="AddRange" />
+          <ScalarProperty Name="NeedArrow" ColumnName="NeedArrow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE21">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE21">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE21">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HitType" ColumnName="HitType" />
+          <ScalarProperty Name="HitRate" ColumnName="HitRate" />
+          <ScalarProperty Name="AddDamage" ColumnName="AddDamage" />
+          <ScalarProperty Name="AddRange" ColumnName="AddRange" />
+          <ScalarProperty Name="NeedArrow" ColumnName="NeedArrow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE3">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE3">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE3">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="DirectType" ColumnName="DirectType" />
+          <ScalarProperty Name="FirstDamage" ColumnName="FirstDamage" />
+          <ScalarProperty Name="TimeDamage" ColumnName="TimeDamage" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Attribute" ColumnName="Attribute" />
+          <ScalarProperty Name="EndDamage" ColumnName="EndDamage" />
+          <ScalarProperty Name="Angle" ColumnName="Angle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE31">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE31">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE31">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="DirectType" ColumnName="DirectType" />
+          <ScalarProperty Name="FirstDamage" ColumnName="FirstDamage" />
+          <ScalarProperty Name="EndDamage" ColumnName="EndDamage" />
+          <ScalarProperty Name="TimeDamage" ColumnName="TimeDamage" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Attribute" ColumnName="Attribute" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Angle" ColumnName="Angle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE4">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE4">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE4">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="BuffType" ColumnName="BuffType" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AttackSpeed" ColumnName="AttackSpeed" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="AC" ColumnName="AC" />
+          <ScalarProperty Name="ACPct" ColumnName="ACPct" />
+          <ScalarProperty Name="Attack" ColumnName="Attack" />
+          <ScalarProperty Name="MagicAttack" ColumnName="MagicAttack" />
+          <ScalarProperty Name="MaxHP" ColumnName="MaxHP" />
+          <ScalarProperty Name="MaxHpPct" ColumnName="MaxHpPct" />
+          <ScalarProperty Name="MaxMP" ColumnName="MaxMP" />
+          <ScalarProperty Name="MaxMpPct" ColumnName="MaxMpPct" />
+          <ScalarProperty Name="Str" ColumnName="Str" />
+          <ScalarProperty Name="Sta" ColumnName="Sta" />
+          <ScalarProperty Name="Dex" ColumnName="Dex" />
+          <ScalarProperty Name="Intel" ColumnName="Intel" />
+          <ScalarProperty Name="Cha" ColumnName="Cha" />
+          <ScalarProperty Name="FireR" ColumnName="FireR" />
+          <ScalarProperty Name="ColdR" ColumnName="ColdR" />
+          <ScalarProperty Name="LightningR" ColumnName="LightningR" />
+          <ScalarProperty Name="MagicR" ColumnName="MagicR" />
+          <ScalarProperty Name="DiseaseR" ColumnName="DiseaseR" />
+          <ScalarProperty Name="PoisonR" ColumnName="PoisonR" />
+          <ScalarProperty Name="ExpPct" ColumnName="ExpPct" />
+          <ScalarProperty Name="SpecialAmount" ColumnName="SpecialAmount" />
+          <ScalarProperty Name="HitRate" ColumnName="HitRate" />
+          <ScalarProperty Name="AvoidRate" ColumnName="AvoidRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE41">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE41">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE41">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="BuffType" ColumnName="BuffType" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AttackSpeed" ColumnName="AttackSpeed" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="AC" ColumnName="AC" />
+          <ScalarProperty Name="ACPct" ColumnName="ACPct" />
+          <ScalarProperty Name="Attack" ColumnName="Attack" />
+          <ScalarProperty Name="MagicAttack" ColumnName="MagicAttack" />
+          <ScalarProperty Name="MaxHP" ColumnName="MaxHP" />
+          <ScalarProperty Name="MaxHPPct" ColumnName="MaxHPPct" />
+          <ScalarProperty Name="MaxMP" ColumnName="MaxMP" />
+          <ScalarProperty Name="MaxMPPct" ColumnName="MaxMPPct" />
+          <ScalarProperty Name="HitRate" ColumnName="HitRate" />
+          <ScalarProperty Name="AvoidRate" ColumnName="AvoidRate" />
+          <ScalarProperty Name="Str" ColumnName="Str" />
+          <ScalarProperty Name="Sta" ColumnName="Sta" />
+          <ScalarProperty Name="Dex" ColumnName="Dex" />
+          <ScalarProperty Name="Intel" ColumnName="Intel" />
+          <ScalarProperty Name="Cha" ColumnName="Cha" />
+          <ScalarProperty Name="FireR" ColumnName="FireR" />
+          <ScalarProperty Name="ColdR" ColumnName="ColdR" />
+          <ScalarProperty Name="LightningR" ColumnName="LightningR" />
+          <ScalarProperty Name="MagicR" ColumnName="MagicR" />
+          <ScalarProperty Name="DiseaseR" ColumnName="DiseaseR" />
+          <ScalarProperty Name="PoisonR" ColumnName="PoisonR" />
+          <ScalarProperty Name="ExpPct" ColumnName="ExpPct" />
+          <ScalarProperty Name="SpecialAmount" ColumnName="SpecialAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE5">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE5">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE5">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ExpRecover" ColumnName="ExpRecover" />
+          <ScalarProperty Name="NeedStone" ColumnName="NeedStone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE51">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE51">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE51">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ExpRecover" ColumnName="ExpRecover" />
+          <ScalarProperty Name="NeedStone" ColumnName="NeedStone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE6">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE6">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE6">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="TransformID" ColumnName="TransformID" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="MaxHp" ColumnName="MaxHp" />
+          <ScalarProperty Name="MaxMp" ColumnName="MaxMp" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="AttackSpeed" ColumnName="AttackSpeed" />
+          <ScalarProperty Name="TotalHit" ColumnName="TotalHit" />
+          <ScalarProperty Name="TotalAc" ColumnName="TotalAc" />
+          <ScalarProperty Name="TotalHitRate" ColumnName="TotalHitRate" />
+          <ScalarProperty Name="TotalEvasionRate" ColumnName="TotalEvasionRate" />
+          <ScalarProperty Name="TotalFireR" ColumnName="TotalFireR" />
+          <ScalarProperty Name="TotalColdR" ColumnName="TotalColdR" />
+          <ScalarProperty Name="TotalLightningR" ColumnName="TotalLightningR" />
+          <ScalarProperty Name="TotalMagicR" ColumnName="TotalMagicR" />
+          <ScalarProperty Name="TotalDiseaseR" ColumnName="TotalDiseaseR" />
+          <ScalarProperty Name="TotalPoisonR" ColumnName="TotalPoisonR" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="UserSkillUse" ColumnName="UserSkillUse" />
+          <ScalarProperty Name="NeedItem" ColumnName="NeedItem" />
+          <ScalarProperty Name="SkillSuccessRate" ColumnName="SkillSuccessRate" />
+          <ScalarProperty Name="MonsterFriendly" ColumnName="MonsterFriendly" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE61">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE61">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE61">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="TransformID" ColumnName="TransformID" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="MaxHp" ColumnName="MaxHp" />
+          <ScalarProperty Name="MaxMp" ColumnName="MaxMp" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="AttackSpeed" ColumnName="AttackSpeed" />
+          <ScalarProperty Name="TotalHit" ColumnName="TotalHit" />
+          <ScalarProperty Name="TotalAc" ColumnName="TotalAc" />
+          <ScalarProperty Name="TotalHitRate" ColumnName="TotalHitRate" />
+          <ScalarProperty Name="TotalEvasionRate" ColumnName="TotalEvasionRate" />
+          <ScalarProperty Name="TotalFireR" ColumnName="TotalFireR" />
+          <ScalarProperty Name="TotalColdR" ColumnName="TotalColdR" />
+          <ScalarProperty Name="TotalLightningR" ColumnName="TotalLightningR" />
+          <ScalarProperty Name="TotalMagicR" ColumnName="TotalMagicR" />
+          <ScalarProperty Name="TotalDiseaseR" ColumnName="TotalDiseaseR" />
+          <ScalarProperty Name="TotalPoisonR" ColumnName="TotalPoisonR" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="UserSkillUse" ColumnName="UserSkillUse" />
+          <ScalarProperty Name="NeedItem" ColumnName="NeedItem" />
+          <ScalarProperty Name="SkillSuccessRate" ColumnName="SkillSuccessRate" />
+          <ScalarProperty Name="MonsterFriendly" ColumnName="MonsterFriendly" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE7">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE7">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE7">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="strNote" ColumnName="strNote" />
+          <ScalarProperty Name="byValidGroup" ColumnName="byValidGroup" />
+          <ScalarProperty Name="byNatoinChange" ColumnName="byNatoinChange" />
+          <ScalarProperty Name="shMonsterNum" ColumnName="shMonsterNum" />
+          <ScalarProperty Name="byTargetChange" ColumnName="byTargetChange" />
+          <ScalarProperty Name="byStateChange" ColumnName="byStateChange" />
+          <ScalarProperty Name="byRadius" ColumnName="byRadius" />
+          <ScalarProperty Name="shHitrate" ColumnName="shHitrate" />
+          <ScalarProperty Name="shDuration" ColumnName="shDuration" />
+          <ScalarProperty Name="shDamage" ColumnName="shDamage" />
+          <ScalarProperty Name="byVisoin" ColumnName="byVisoin" />
+          <ScalarProperty Name="nNeedItem" ColumnName="nNeedItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE71">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE71">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE71">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="strNote" ColumnName="strNote" />
+          <ScalarProperty Name="byValidGroup" ColumnName="byValidGroup" />
+          <ScalarProperty Name="byNatoinChange" ColumnName="byNatoinChange" />
+          <ScalarProperty Name="shMonsterNum" ColumnName="shMonsterNum" />
+          <ScalarProperty Name="byTargetChange" ColumnName="byTargetChange" />
+          <ScalarProperty Name="byStateChange" ColumnName="byStateChange" />
+          <ScalarProperty Name="byRadius" ColumnName="byRadius" />
+          <ScalarProperty Name="shHitrate" ColumnName="shHitrate" />
+          <ScalarProperty Name="shDuration" ColumnName="shDuration" />
+          <ScalarProperty Name="shDamage" ColumnName="shDamage" />
+          <ScalarProperty Name="byVisoin" ColumnName="byVisoin" />
+          <ScalarProperty Name="nNeedItem" ColumnName="nNeedItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE8">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE8">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE8">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="WarpType" ColumnName="WarpType" />
+          <ScalarProperty Name="ExpRecover" ColumnName="ExpRecover" />
+          <ScalarProperty Name="KickDistance" ColumnName="KickDistance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE81">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE81">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE81">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="WarpType" ColumnName="WarpType" />
+          <ScalarProperty Name="ExpRecover" ColumnName="ExpRecover" />
+          <ScalarProperty Name="KickDistance" ColumnName="KickDistance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE9">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE9">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE9">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ValidGroup" ColumnName="ValidGroup" />
+          <ScalarProperty Name="NationChange" ColumnName="NationChange" />
+          <ScalarProperty Name="MonsterNum" ColumnName="MonsterNum" />
+          <ScalarProperty Name="TargetChange" ColumnName="TargetChange" />
+          <ScalarProperty Name="StateChange" ColumnName="StateChange" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Hitrate" ColumnName="Hitrate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AddDamage" ColumnName="AddDamage" />
+          <ScalarProperty Name="Vision" ColumnName="Vision" />
+          <ScalarProperty Name="NeedItem" ColumnName="NeedItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC_TYPE91">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC_TYPE91">
+        <MappingFragment StoreEntitySet="MAGIC_TYPE91">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ValidGroup" ColumnName="ValidGroup" />
+          <ScalarProperty Name="NationChange" ColumnName="NationChange" />
+          <ScalarProperty Name="MonsterNum" ColumnName="MonsterNum" />
+          <ScalarProperty Name="TargetChange" ColumnName="TargetChange" />
+          <ScalarProperty Name="StateChange" ColumnName="StateChange" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Hitrate" ColumnName="Hitrate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AddDamage" ColumnName="AddDamage" />
+          <ScalarProperty Name="Vision" ColumnName="Vision" />
+          <ScalarProperty Name="NeedItem" ColumnName="NeedItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAGIC1">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAGIC1">
+        <MappingFragment StoreEntitySet="MAGIC1">
+          <ScalarProperty Name="MagicNum" ColumnName="MagicNum" />
+          <ScalarProperty Name="EnName" ColumnName="EnName" />
+          <ScalarProperty Name="KrName" ColumnName="KrName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BeforeAction" ColumnName="BeforeAction" />
+          <ScalarProperty Name="TargetAction" ColumnName="TargetAction" />
+          <ScalarProperty Name="SelfEffect" ColumnName="SelfEffect" />
+          <ScalarProperty Name="FlyingEffect" ColumnName="FlyingEffect" />
+          <ScalarProperty Name="TargetEffect" ColumnName="TargetEffect" />
+          <ScalarProperty Name="Moral" ColumnName="Moral" />
+          <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+          <ScalarProperty Name="Skill" ColumnName="Skill" />
+          <ScalarProperty Name="Msp" ColumnName="Msp" />
+          <ScalarProperty Name="HP" ColumnName="HP" />
+          <ScalarProperty Name="ItemGroup" ColumnName="ItemGroup" />
+          <ScalarProperty Name="UseItem" ColumnName="UseItem" />
+          <ScalarProperty Name="CastTime" ColumnName="CastTime" />
+          <ScalarProperty Name="ReCastTime" ColumnName="ReCastTime" />
+          <ScalarProperty Name="SuccessRate" ColumnName="SuccessRate" />
+          <ScalarProperty Name="Type1" ColumnName="Type1" />
+          <ScalarProperty Name="Type2" ColumnName="Type2" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Etc" ColumnName="Etc" />
+          <ScalarProperty Name="UseStanding" ColumnName="UseStanding" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAIL_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAIL_ITEM">
+        <MappingFragment StoreEntitySet="MAIL_ITEM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="sId" ColumnName="sId" />
+          <ScalarProperty Name="tId" ColumnName="tId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="bAccess" ColumnName="bAccess" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="nNum" ColumnName="nNum" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+          <ScalarProperty Name="sTime" ColumnName="sTime" />
+          <ScalarProperty Name="bDay" ColumnName="bDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAKE_DEFENSIVE">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAKE_DEFENSIVE">
+        <MappingFragment StoreEntitySet="MAKE_DEFENSIVE">
+          <ScalarProperty Name="byLevel" ColumnName="byLevel" />
+          <ScalarProperty Name="sClass_1" ColumnName="sClass_1" />
+          <ScalarProperty Name="sClass_2" ColumnName="sClass_2" />
+          <ScalarProperty Name="sClass_3" ColumnName="sClass_3" />
+          <ScalarProperty Name="sClass_4" ColumnName="sClass_4" />
+          <ScalarProperty Name="sClass_5" ColumnName="sClass_5" />
+          <ScalarProperty Name="sClass_6" ColumnName="sClass_6" />
+          <ScalarProperty Name="sClass_7" ColumnName="sClass_7" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAKE_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAKE_ITEM">
+        <MappingFragment StoreEntitySet="MAKE_ITEM">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="strItemInfo" ColumnName="strItemInfo" />
+          <ScalarProperty Name="iItemCode" ColumnName="iItemCode" />
+          <ScalarProperty Name="byItemLevel" ColumnName="byItemLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAKE_ITEM_GRADECODE">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAKE_ITEM_GRADECODE">
+        <MappingFragment StoreEntitySet="MAKE_ITEM_GRADECODE">
+          <ScalarProperty Name="byItemIndex" ColumnName="byItemIndex" />
+          <ScalarProperty Name="byGrade_1" ColumnName="byGrade_1" />
+          <ScalarProperty Name="byGrade_2" ColumnName="byGrade_2" />
+          <ScalarProperty Name="byGrade_3" ColumnName="byGrade_3" />
+          <ScalarProperty Name="byGrade_4" ColumnName="byGrade_4" />
+          <ScalarProperty Name="byGrade_5" ColumnName="byGrade_5" />
+          <ScalarProperty Name="byGrade_6" ColumnName="byGrade_6" />
+          <ScalarProperty Name="byGrade_7" ColumnName="byGrade_7" />
+          <ScalarProperty Name="byGrade_8" ColumnName="byGrade_8" />
+          <ScalarProperty Name="byGrade_9" ColumnName="byGrade_9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAKE_ITEM_LARECODE">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAKE_ITEM_LARECODE">
+        <MappingFragment StoreEntitySet="MAKE_ITEM_LARECODE">
+          <ScalarProperty Name="byLevelGrade" ColumnName="byLevelGrade" />
+          <ScalarProperty Name="sUpgradeItem" ColumnName="sUpgradeItem" />
+          <ScalarProperty Name="sLareItem" ColumnName="sLareItem" />
+          <ScalarProperty Name="sMagicItem" ColumnName="sMagicItem" />
+          <ScalarProperty Name="sGereralItem" ColumnName="sGereralItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MAKE_WEAPON">
+      <EntityTypeMapping TypeName="moyangamePKModel.MAKE_WEAPON">
+        <MappingFragment StoreEntitySet="MAKE_WEAPON">
+          <ScalarProperty Name="byLevel" ColumnName="byLevel" />
+          <ScalarProperty Name="sClass_1" ColumnName="sClass_1" />
+          <ScalarProperty Name="sClass_2" ColumnName="sClass_2" />
+          <ScalarProperty Name="sClass_3" ColumnName="sClass_3" />
+          <ScalarProperty Name="sClass_4" ColumnName="sClass_4" />
+          <ScalarProperty Name="sClass_5" ColumnName="sClass_5" />
+          <ScalarProperty Name="sClass_6" ColumnName="sClass_6" />
+          <ScalarProperty Name="sClass_7" ColumnName="sClass_7" />
+          <ScalarProperty Name="sClass_8" ColumnName="sClass_8" />
+          <ScalarProperty Name="sClass_9" ColumnName="sClass_9" />
+          <ScalarProperty Name="sClass_10" ColumnName="sClass_10" />
+          <ScalarProperty Name="sClass_11" ColumnName="sClass_11" />
+          <ScalarProperty Name="sClass_12" ColumnName="sClass_12" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONSTER_CHALLENGE">
+      <EntityTypeMapping TypeName="moyangamePKModel.MONSTER_CHALLENGE">
+        <MappingFragment StoreEntitySet="MONSTER_CHALLENGE">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="bStartTime1" ColumnName="bStartTime1" />
+          <ScalarProperty Name="bStartTime2" ColumnName="bStartTime2" />
+          <ScalarProperty Name="bStartTime3" ColumnName="bStartTime3" />
+          <ScalarProperty Name="bLevelMin" ColumnName="bLevelMin" />
+          <ScalarProperty Name="bLevelMax" ColumnName="bLevelMax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONSTER_CHALLENGE_SUMMON_LIST">
+      <EntityTypeMapping TypeName="moyangamePKModel.MONSTER_CHALLENGE_SUMMON_LIST">
+        <MappingFragment StoreEntitySet="MONSTER_CHALLENGE_SUMMON_LIST">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="bLevel" ColumnName="bLevel" />
+          <ScalarProperty Name="bStage" ColumnName="bStage" />
+          <ScalarProperty Name="bStageLevel" ColumnName="bStageLevel" />
+          <ScalarProperty Name="sTime" ColumnName="sTime" />
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+          <ScalarProperty Name="sPosX" ColumnName="sPosX" />
+          <ScalarProperty Name="sPosZ" ColumnName="sPosZ" />
+          <ScalarProperty Name="bRange" ColumnName="bRange" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONSTER_RESPAWN_LIST">
+      <EntityTypeMapping TypeName="moyangamePKModel.MONSTER_RESPAWN_LIST">
+        <MappingFragment StoreEntitySet="MONSTER_RESPAWN_LIST">
+          <ScalarProperty Name="sIndex" ColumnName="sIndex" />
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONSTER_SUMMON_LIST">
+      <EntityTypeMapping TypeName="moyangamePKModel.MONSTER_SUMMON_LIST">
+        <MappingFragment StoreEntitySet="MONSTER_SUMMON_LIST">
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="sLevel" ColumnName="sLevel" />
+          <ScalarProperty Name="sProbability" ColumnName="sProbability" />
+          <ScalarProperty Name="bType" ColumnName="bType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONSTER_SUMMON_LIST_ZONE">
+      <EntityTypeMapping TypeName="moyangamePKModel.MONSTER_SUMMON_LIST_ZONE">
+        <MappingFragment StoreEntitySet="MONSTER_SUMMON_LIST_ZONE">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="ZoneID" ColumnName="ZoneID" />
+          <ScalarProperty Name="sSid" ColumnName="sSid" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="byFamily" ColumnName="byFamily" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PREMIUM_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.PREMIUM_ITEM">
+        <MappingFragment StoreEntitySet="PREMIUM_ITEM">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ExpRestorePercent" ColumnName="ExpRestorePercent" />
+          <ScalarProperty Name="NoahPercent" ColumnName="NoahPercent" />
+          <ScalarProperty Name="DropPercent" ColumnName="DropPercent" />
+          <ScalarProperty Name="BonusLoyalty" ColumnName="BonusLoyalty" />
+          <ScalarProperty Name="RepairDiscountPercent" ColumnName="RepairDiscountPercent" />
+          <ScalarProperty Name="ItemSellPercent" ColumnName="ItemSellPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PREMIUM_ITEM_EXP">
+      <EntityTypeMapping TypeName="moyangamePKModel.PREMIUM_ITEM_EXP">
+        <MappingFragment StoreEntitySet="PREMIUM_ITEM_EXP">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="MinLevel" ColumnName="MinLevel" />
+          <ScalarProperty Name="MaxLevel" ColumnName="MaxLevel" />
+          <ScalarProperty Name="sPercent" ColumnName="sPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PREMIUM_SERVICE_USER">
+      <EntityTypeMapping TypeName="moyangamePKModel.PREMIUM_SERVICE_USER">
+        <MappingFragment StoreEntitySet="PREMIUM_SERVICE_USER">
+          <ScalarProperty Name="strClientID" ColumnName="strClientID" />
+          <ScalarProperty Name="timeReg" ColumnName="timeReg" />
+          <ScalarProperty Name="timeValid" ColumnName="timeValid" />
+          <ScalarProperty Name="bCurrent" ColumnName="bCurrent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_HELPER11">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_HELPER11">
+        <MappingFragment StoreEntitySet="QUEST_HELPER11">
+          <ScalarProperty Name="nIndex" ColumnName="nIndex" />
+          <ScalarProperty Name="bMessageType" ColumnName="bMessageType" />
+          <ScalarProperty Name="bLevel" ColumnName="bLevel" />
+          <ScalarProperty Name="nExp" ColumnName="nExp" />
+          <ScalarProperty Name="bClass" ColumnName="bClass" />
+          <ScalarProperty Name="bNation" ColumnName="bNation" />
+          <ScalarProperty Name="bQuestType" ColumnName="bQuestType" />
+          <ScalarProperty Name="bZone" ColumnName="bZone" />
+          <ScalarProperty Name="sNpcId" ColumnName="sNpcId" />
+          <ScalarProperty Name="sEventDataIndex" ColumnName="sEventDataIndex" />
+          <ScalarProperty Name="bEventStatus" ColumnName="bEventStatus" />
+          <ScalarProperty Name="nEventTriggerIndex" ColumnName="nEventTriggerIndex" />
+          <ScalarProperty Name="nEventCompleteIndex" ColumnName="nEventCompleteIndex" />
+          <ScalarProperty Name="nExchangeIndex" ColumnName="nExchangeIndex" />
+          <ScalarProperty Name="nEventTalkIndex" ColumnName="nEventTalkIndex" />
+          <ScalarProperty Name="strLuaFilename" ColumnName="strLuaFilename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_LOG">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_LOG">
+        <MappingFragment StoreEntitySet="QUEST_LOG">
+          <ScalarProperty Name="sQuestNum" ColumnName="sQuestNum" />
+          <ScalarProperty Name="nCount" ColumnName="nCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_MENU">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_MENU">
+        <MappingFragment StoreEntitySet="QUEST_MENU">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="strMenu" ColumnName="strMenu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_MONSTER">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_MONSTER">
+        <MappingFragment StoreEntitySet="QUEST_MONSTER">
+          <ScalarProperty Name="sQuestNum" ColumnName="sQuestNum" />
+          <ScalarProperty Name="sNum1a" ColumnName="sNum1a" />
+          <ScalarProperty Name="sNum1b" ColumnName="sNum1b" />
+          <ScalarProperty Name="sNum1c" ColumnName="sNum1c" />
+          <ScalarProperty Name="sNum1d" ColumnName="sNum1d" />
+          <ScalarProperty Name="sCount1" ColumnName="sCount1" />
+          <ScalarProperty Name="sNum2a" ColumnName="sNum2a" />
+          <ScalarProperty Name="sNum2b" ColumnName="sNum2b" />
+          <ScalarProperty Name="sNum2c" ColumnName="sNum2c" />
+          <ScalarProperty Name="sNum2d" ColumnName="sNum2d" />
+          <ScalarProperty Name="sCount2" ColumnName="sCount2" />
+          <ScalarProperty Name="sNum3a" ColumnName="sNum3a" />
+          <ScalarProperty Name="sNum3b" ColumnName="sNum3b" />
+          <ScalarProperty Name="sNum3c" ColumnName="sNum3c" />
+          <ScalarProperty Name="sNum3d" ColumnName="sNum3d" />
+          <ScalarProperty Name="sCount3" ColumnName="sCount3" />
+          <ScalarProperty Name="sNum4a" ColumnName="sNum4a" />
+          <ScalarProperty Name="sNum4b" ColumnName="sNum4b" />
+          <ScalarProperty Name="sNum4c" ColumnName="sNum4c" />
+          <ScalarProperty Name="sNum4d" ColumnName="sNum4d" />
+          <ScalarProperty Name="sCount4" ColumnName="sCount4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_MONSTER11">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_MONSTER11">
+        <MappingFragment StoreEntitySet="QUEST_MONSTER11">
+          <ScalarProperty Name="sQuestNum" ColumnName="sQuestNum" />
+          <ScalarProperty Name="sNum1a" ColumnName="sNum1a" />
+          <ScalarProperty Name="sNum1b" ColumnName="sNum1b" />
+          <ScalarProperty Name="sNum1c" ColumnName="sNum1c" />
+          <ScalarProperty Name="sNum1d" ColumnName="sNum1d" />
+          <ScalarProperty Name="sCount1" ColumnName="sCount1" />
+          <ScalarProperty Name="sNum2a" ColumnName="sNum2a" />
+          <ScalarProperty Name="sNum2b" ColumnName="sNum2b" />
+          <ScalarProperty Name="sNum2c" ColumnName="sNum2c" />
+          <ScalarProperty Name="sNum2d" ColumnName="sNum2d" />
+          <ScalarProperty Name="sCount2" ColumnName="sCount2" />
+          <ScalarProperty Name="sNum3a" ColumnName="sNum3a" />
+          <ScalarProperty Name="sNum3b" ColumnName="sNum3b" />
+          <ScalarProperty Name="sNum3c" ColumnName="sNum3c" />
+          <ScalarProperty Name="sNum3d" ColumnName="sNum3d" />
+          <ScalarProperty Name="sCount3" ColumnName="sCount3" />
+          <ScalarProperty Name="sNum4a" ColumnName="sNum4a" />
+          <ScalarProperty Name="sNum4b" ColumnName="sNum4b" />
+          <ScalarProperty Name="sNum4c" ColumnName="sNum4c" />
+          <ScalarProperty Name="sNum4d" ColumnName="sNum4d" />
+          <ScalarProperty Name="sCount4" ColumnName="sCount4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUEST_TALK">
+      <EntityTypeMapping TypeName="moyangamePKModel.QUEST_TALK">
+        <MappingFragment StoreEntitySet="QUEST_TALK">
+          <ScalarProperty Name="iNum" ColumnName="iNum" />
+          <ScalarProperty Name="strTalk" ColumnName="strTalk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVER_RESOURCE">
+      <EntityTypeMapping TypeName="moyangamePKModel.SERVER_RESOURCE">
+        <MappingFragment StoreEntitySet="SERVER_RESOURCE">
+          <ScalarProperty Name="nResourceID" ColumnName="nResourceID" />
+          <ScalarProperty Name="strResource" ColumnName="strResource" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SET_ITEM">
+      <EntityTypeMapping TypeName="moyangamePKModel.SET_ITEM">
+        <MappingFragment StoreEntitySet="SET_ITEM">
+          <ScalarProperty Name="SetIndex" ColumnName="SetIndex" />
+          <ScalarProperty Name="SetName" ColumnName="SetName" />
+          <ScalarProperty Name="ACBonus" ColumnName="ACBonus" />
+          <ScalarProperty Name="HPBonus" ColumnName="HPBonus" />
+          <ScalarProperty Name="MPBonus" ColumnName="MPBonus" />
+          <ScalarProperty Name="StrengthBonus" ColumnName="StrengthBonus" />
+          <ScalarProperty Name="StaminaBonus" ColumnName="StaminaBonus" />
+          <ScalarProperty Name="DexterityBonus" ColumnName="DexterityBonus" />
+          <ScalarProperty Name="IntelBonus" ColumnName="IntelBonus" />
+          <ScalarProperty Name="CharismaBonus" ColumnName="CharismaBonus" />
+          <ScalarProperty Name="FlameResistance" ColumnName="FlameResistance" />
+          <ScalarProperty Name="GlacierResistance" ColumnName="GlacierResistance" />
+          <ScalarProperty Name="LightningResistance" ColumnName="LightningResistance" />
+          <ScalarProperty Name="PoisonResistance" ColumnName="PoisonResistance" />
+          <ScalarProperty Name="MagicResistance" ColumnName="MagicResistance" />
+          <ScalarProperty Name="CurseResistance" ColumnName="CurseResistance" />
+          <ScalarProperty Name="XPBonusPercent" ColumnName="XPBonusPercent" />
+          <ScalarProperty Name="CoinBonusPercent" ColumnName="CoinBonusPercent" />
+          <ScalarProperty Name="APBonusPercent" ColumnName="APBonusPercent" />
+          <ScalarProperty Name="APBonusClassType" ColumnName="APBonusClassType" />
+          <ScalarProperty Name="APBonusClassPercent" ColumnName="APBonusClassPercent" />
+          <ScalarProperty Name="ACBonusClassType" ColumnName="ACBonusClassType" />
+          <ScalarProperty Name="ACBonusClassPercent" ColumnName="ACBonusClassPercent" />
+          <ScalarProperty Name="MaxWeightBonus" ColumnName="MaxWeightBonus" />
+          <ScalarProperty Name="NPBonus" ColumnName="NPBonus" />
+          <ScalarProperty Name="Unk10" ColumnName="Unk10" />
+          <ScalarProperty Name="Unk11" ColumnName="Unk11" />
+          <ScalarProperty Name="Unk12" ColumnName="Unk12" />
+          <ScalarProperty Name="Unk13" ColumnName="Unk13" />
+          <ScalarProperty Name="Unk14" ColumnName="Unk14" />
+          <ScalarProperty Name="Unk15" ColumnName="Unk15" />
+          <ScalarProperty Name="Unk16" ColumnName="Unk16" />
+          <ScalarProperty Name="Unk17" ColumnName="Unk17" />
+          <ScalarProperty Name="Unk18" ColumnName="Unk18" />
+          <ScalarProperty Name="Unk19" ColumnName="Unk19" />
+          <ScalarProperty Name="Unk20" ColumnName="Unk20" />
+          <ScalarProperty Name="Unk21" ColumnName="Unk21" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="START_POSITION">
+      <EntityTypeMapping TypeName="moyangamePKModel.START_POSITION">
+        <MappingFragment StoreEntitySet="START_POSITION">
+          <ScalarProperty Name="ZoneID" ColumnName="ZoneID" />
+          <ScalarProperty Name="sKarusX" ColumnName="sKarusX" />
+          <ScalarProperty Name="sKarusZ" ColumnName="sKarusZ" />
+          <ScalarProperty Name="sElmoradX" ColumnName="sElmoradX" />
+          <ScalarProperty Name="sElmoradZ" ColumnName="sElmoradZ" />
+          <ScalarProperty Name="sKarusGateX" ColumnName="sKarusGateX" />
+          <ScalarProperty Name="sKarusGateZ" ColumnName="sKarusGateZ" />
+          <ScalarProperty Name="sElmoGateX" ColumnName="sElmoGateX" />
+          <ScalarProperty Name="sElmoGateZ" ColumnName="sElmoGateZ" />
+          <ScalarProperty Name="bRangeX" ColumnName="bRangeX" />
+          <ScalarProperty Name="bRangeZ" ColumnName="bRangeZ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER">
+      <EntityTypeMapping TypeName="moyangamePKModel.TB_USER">
+        <MappingFragment StoreEntitySet="TB_USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strPasswd" ColumnName="strPasswd" />
+          <ScalarProperty Name="strSealPasswd" ColumnName="strSealPasswd" />
+          <ScalarProperty Name="strClientIP" ColumnName="strClientIP" />
+          <ScalarProperty Name="bPremiumType" ColumnName="bPremiumType" />
+          <ScalarProperty Name="dtPremiumTime" ColumnName="dtPremiumTime" />
+          <ScalarProperty Name="sHours" ColumnName="sHours" />
+          <ScalarProperty Name="dtCreateTime" ColumnName="dtCreateTime" />
+          <ScalarProperty Name="CashPoint" ColumnName="CashPoint" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="guvenlikcevap" ColumnName="guvenlikcevap" />
+          <ScalarProperty Name="guvenliksoru" ColumnName="guvenliksoru" />
+          <ScalarProperty Name="TCashPoint" ColumnName="TCashPoint" />
+          <ScalarProperty Name="PusAdmin" ColumnName="PusAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_DAILY_OP">
+      <EntityTypeMapping TypeName="moyangamePKModel.USER_DAILY_OP">
+        <MappingFragment StoreEntitySet="USER_DAILY_OP">
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="ChaosMapTime" ColumnName="ChaosMapTime" />
+          <ScalarProperty Name="UserRankRewardTime" ColumnName="UserRankRewardTime" />
+          <ScalarProperty Name="PersonalRankRewardTime" ColumnName="PersonalRankRewardTime" />
+          <ScalarProperty Name="KingWingTime" ColumnName="KingWingTime" />
+          <ScalarProperty Name="WarderKillerTime1" ColumnName="WarderKillerTime1" />
+          <ScalarProperty Name="WarderKillerTime2" ColumnName="WarderKillerTime2" />
+          <ScalarProperty Name="KeeperKillerTime" ColumnName="KeeperKillerTime" />
+          <ScalarProperty Name="UserLoyaltyWingRewardTime" ColumnName="UserLoyaltyWingRewardTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_SAVED_MAGIC">
+      <EntityTypeMapping TypeName="moyangamePKModel.USER_SAVED_MAGIC">
+        <MappingFragment StoreEntitySet="USER_SAVED_MAGIC">
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="nSkill1" ColumnName="nSkill1" />
+          <ScalarProperty Name="nDuring1" ColumnName="nDuring1" />
+          <ScalarProperty Name="nSkill2" ColumnName="nSkill2" />
+          <ScalarProperty Name="nDuring2" ColumnName="nDuring2" />
+          <ScalarProperty Name="nSkill3" ColumnName="nSkill3" />
+          <ScalarProperty Name="nDuring3" ColumnName="nDuring3" />
+          <ScalarProperty Name="nSkill4" ColumnName="nSkill4" />
+          <ScalarProperty Name="nDuring4" ColumnName="nDuring4" />
+          <ScalarProperty Name="nSkill5" ColumnName="nSkill5" />
+          <ScalarProperty Name="nDuring5" ColumnName="nDuring5" />
+          <ScalarProperty Name="nSkill6" ColumnName="nSkill6" />
+          <ScalarProperty Name="nDuring6" ColumnName="nDuring6" />
+          <ScalarProperty Name="nSkill7" ColumnName="nSkill7" />
+          <ScalarProperty Name="nDuring7" ColumnName="nDuring7" />
+          <ScalarProperty Name="nSkill8" ColumnName="nSkill8" />
+          <ScalarProperty Name="nDuring8" ColumnName="nDuring8" />
+          <ScalarProperty Name="nSkill9" ColumnName="nSkill9" />
+          <ScalarProperty Name="nDuring9" ColumnName="nDuring9" />
+          <ScalarProperty Name="nSkill10" ColumnName="nSkill10" />
+          <ScalarProperty Name="nDuring10" ColumnName="nDuring10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VERSION">
+      <EntityTypeMapping TypeName="moyangamePKModel.VERSION">
+        <MappingFragment StoreEntitySet="VERSION">
+          <ScalarProperty Name="sVersion" ColumnName="sVersion" />
+          <ScalarProperty Name="sHistoryVersion" ColumnName="sHistoryVersion" />
+          <ScalarProperty Name="strFilename" ColumnName="strFilename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WAREHOUSE_ITEMLER">
+      <EntityTypeMapping TypeName="moyangamePKModel.WAREHOUSE_ITEMLER">
+        <MappingFragment StoreEntitySet="WAREHOUSE_ITEMLER">
+          <ScalarProperty Name="dwid" ColumnName="dwid" />
+          <ScalarProperty Name="stacksize" ColumnName="stacksize" />
+          <ScalarProperty Name="durability" ColumnName="durability" />
+          <ScalarProperty Name="strUserId" ColumnName="strUserId" />
+          <ScalarProperty Name="sira" ColumnName="sira" />
+          <ScalarProperty Name="itembasicname" ColumnName="itembasicname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WEB_ITEMMALL">
+      <EntityTypeMapping TypeName="moyangamePKModel.WEB_ITEMMALL">
+        <MappingFragment StoreEntitySet="WEB_ITEMMALL">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="ServerNo" ColumnName="ServerNo" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+          <ScalarProperty Name="BuyTime" ColumnName="BuyTime" />
+          <ScalarProperty Name="img_file_name" ColumnName="img_file_name" />
+          <ScalarProperty Name="strItemName" ColumnName="strItemName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="pay_type" ColumnName="pay_type" />
+          <ScalarProperty Name="itemtime" ColumnName="itemtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WEB_ITEMMALL_LOG">
+      <EntityTypeMapping TypeName="moyangamePKModel.WEB_ITEMMALL_LOG">
+        <MappingFragment StoreEntitySet="WEB_ITEMMALL_LOG">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strCharID" ColumnName="strCharID" />
+          <ScalarProperty Name="ServerNo" ColumnName="ServerNo" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+          <ScalarProperty Name="BuyTime" ColumnName="BuyTime" />
+          <ScalarProperty Name="img_file_name" ColumnName="img_file_name" />
+          <ScalarProperty Name="strItemName" ColumnName="strItemName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="pay_type" ColumnName="pay_type" />
+          <ScalarProperty Name="nExpirationTime" ColumnName="nExpirationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ACCOUNT_LOGIN" FunctionName="moyangamePKModel.Store.ACCOUNT_LOGIN" />
+    <FunctionImportMapping FunctionImportName="ACCOUNT_LOGOUT" FunctionName="moyangamePKModel.Store.ACCOUNT_LOGOUT" />
+    <FunctionImportMapping FunctionImportName="ACCOUNT_NATION_TRANSFER" FunctionName="moyangamePKModel.Store.ACCOUNT_NATION_TRANSFER" />
+    <FunctionImportMapping FunctionImportName="ACCOUNT_PREMIUM" FunctionName="moyangamePKModel.Store.ACCOUNT_PREMIUM" />
+    <FunctionImportMapping FunctionImportName="ADD_KESN_CODES" FunctionName="moyangamePKModel.Store.ADD_KESN_CODES" />
+    <FunctionImportMapping FunctionImportName="CHANGE_CASTLE_COMMERCE" FunctionName="moyangamePKModel.Store.CHANGE_CASTLE_COMMERCE" />
+    <FunctionImportMapping FunctionImportName="CHANGE_HAIR" FunctionName="moyangamePKModel.Store.CHANGE_HAIR" />
+    <FunctionImportMapping FunctionImportName="CHANGE_HAIR_INGAME" FunctionName="moyangamePKModel.Store.CHANGE_HAIR_INGAME" />
+    <FunctionImportMapping FunctionImportName="CHANGE_NEW_ID" FunctionName="moyangamePKModel.Store.CHANGE_NEW_ID" />
+    <FunctionImportMapping FunctionImportName="CLEAR_REMAIN_CURRENTUSER" FunctionName="moyangamePKModel.Store.CLEAR_REMAIN_CURRENTUSER" />
+    <FunctionImportMapping FunctionImportName="CLEAR_REMAIN_USERS" FunctionName="moyangamePKModel.Store.CLEAR_REMAIN_USERS" />
+    <FunctionImportMapping FunctionImportName="CREATE_KNIGHTS" FunctionName="moyangamePKModel.Store.CREATE_KNIGHTS" />
+    <FunctionImportMapping FunctionImportName="CREATE_NEW_CHAR" FunctionName="moyangamePKModel.Store.CREATE_NEW_CHAR" />
+    <FunctionImportMapping FunctionImportName="DB_SIFIRLA" FunctionName="moyangamePKModel.Store.DB_SIFIRLA" />
+    <FunctionImportMapping FunctionImportName="DELETE_FRIEND_LIST" FunctionName="moyangamePKModel.Store.DELETE_FRIEND_LIST" />
+    <FunctionImportMapping FunctionImportName="DELETE_KNIGHTS" FunctionName="moyangamePKModel.Store.DELETE_KNIGHTS" />
+    <FunctionImportMapping FunctionImportName="DONATE_CLAN_POINTS" FunctionName="moyangamePKModel.Store.DONATE_CLAN_POINTS" />
+    <FunctionImportMapping FunctionImportName="dt_addtosourcecontrol" FunctionName="moyangamePKModel.Store.dt_addtosourcecontrol" />
+    <FunctionImportMapping FunctionImportName="dt_addtosourcecontrol_u" FunctionName="moyangamePKModel.Store.dt_addtosourcecontrol_u" />
+    <FunctionImportMapping FunctionImportName="dt_adduserobject" FunctionName="moyangamePKModel.Store.dt_adduserobject" />
+    <FunctionImportMapping FunctionImportName="dt_adduserobject_vcs" FunctionName="moyangamePKModel.Store.dt_adduserobject_vcs" />
+    <FunctionImportMapping FunctionImportName="dt_checkinobject" FunctionName="moyangamePKModel.Store.dt_checkinobject" />
+    <FunctionImportMapping FunctionImportName="dt_checkinobject_u" FunctionName="moyangamePKModel.Store.dt_checkinobject_u" />
+    <FunctionImportMapping FunctionImportName="dt_checkoutobject" FunctionName="moyangamePKModel.Store.dt_checkoutobject" />
+    <FunctionImportMapping FunctionImportName="dt_checkoutobject_u" FunctionName="moyangamePKModel.Store.dt_checkoutobject_u" />
+    <FunctionImportMapping FunctionImportName="dt_displayoaerror" FunctionName="moyangamePKModel.Store.dt_displayoaerror" />
+    <FunctionImportMapping FunctionImportName="dt_displayoaerror_u" FunctionName="moyangamePKModel.Store.dt_displayoaerror_u" />
+    <FunctionImportMapping FunctionImportName="dt_droppropertiesbyid" FunctionName="moyangamePKModel.Store.dt_droppropertiesbyid" />
+    <FunctionImportMapping FunctionImportName="dt_dropuserobjectbyid" FunctionName="moyangamePKModel.Store.dt_dropuserobjectbyid" />
+    <FunctionImportMapping FunctionImportName="dt_generateansiname" FunctionName="moyangamePKModel.Store.dt_generateansiname" />
+    <FunctionImportMapping FunctionImportName="dt_getobjwithprop" FunctionName="moyangamePKModel.Store.dt_getobjwithprop" />
+    <FunctionImportMapping FunctionImportName="dt_getobjwithprop_u" FunctionName="moyangamePKModel.Store.dt_getobjwithprop_u" />
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid" FunctionName="moyangamePKModel.Store.dt_getpropertiesbyid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.dt_getpropertiesbyid_Result">
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid_u" FunctionName="moyangamePKModel.Store.dt_getpropertiesbyid_u">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.dt_getpropertiesbyid_u_Result">
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid_vcs" FunctionName="moyangamePKModel.Store.dt_getpropertiesbyid_vcs" />
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid_vcs_u" FunctionName="moyangamePKModel.Store.dt_getpropertiesbyid_vcs_u" />
+    <FunctionImportMapping FunctionImportName="dt_isundersourcecontrol" FunctionName="moyangamePKModel.Store.dt_isundersourcecontrol" />
+    <FunctionImportMapping FunctionImportName="dt_isundersourcecontrol_u" FunctionName="moyangamePKModel.Store.dt_isundersourcecontrol_u" />
+    <FunctionImportMapping FunctionImportName="dt_removefromsourcecontrol" FunctionName="moyangamePKModel.Store.dt_removefromsourcecontrol" />
+    <FunctionImportMapping FunctionImportName="dt_setpropertybyid" FunctionName="moyangamePKModel.Store.dt_setpropertybyid" />
+    <FunctionImportMapping FunctionImportName="dt_setpropertybyid_u" FunctionName="moyangamePKModel.Store.dt_setpropertybyid_u" />
+    <FunctionImportMapping FunctionImportName="dt_validateloginparams" FunctionName="moyangamePKModel.Store.dt_validateloginparams" />
+    <FunctionImportMapping FunctionImportName="dt_validateloginparams_u" FunctionName="moyangamePKModel.Store.dt_validateloginparams_u" />
+    <FunctionImportMapping FunctionImportName="dt_vcsenabled" FunctionName="moyangamePKModel.Store.dt_vcsenabled" />
+    <FunctionImportMapping FunctionImportName="dt_verstamp006" FunctionName="moyangamePKModel.Store.dt_verstamp006" />
+    <FunctionImportMapping FunctionImportName="dt_whocheckedout" FunctionName="moyangamePKModel.Store.dt_whocheckedout" />
+    <FunctionImportMapping FunctionImportName="dt_whocheckedout_u" FunctionName="moyangamePKModel.Store.dt_whocheckedout_u" />
+    <FunctionImportMapping FunctionImportName="GAME_LOGIN" FunctionName="moyangamePKModel.Store.GAME_LOGIN" />
+    <FunctionImportMapping FunctionImportName="GIRISPANEL" FunctionName="moyangamePKModel.Store.GIRISPANEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.GIRISPANEL_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="strPasswd" ColumnName="strPasswd" />
+          <ScalarProperty Name="strSealPasswd" ColumnName="strSealPasswd" />
+          <ScalarProperty Name="strClientIP" ColumnName="strClientIP" />
+          <ScalarProperty Name="bPremiumType" ColumnName="bPremiumType" />
+          <ScalarProperty Name="dtPremiumTime" ColumnName="dtPremiumTime" />
+          <ScalarProperty Name="sHours" ColumnName="sHours" />
+          <ScalarProperty Name="dtCreateTime" ColumnName="dtCreateTime" />
+          <ScalarProperty Name="CashPoint" ColumnName="CashPoint" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="guvenlikcevap" ColumnName="guvenlikcevap" />
+          <ScalarProperty Name="guvenliksoru" ColumnName="guvenliksoru" />
+          <ScalarProperty Name="TCashPoint" ColumnName="TCashPoint" />
+          <ScalarProperty Name="PusAdmin" ColumnName="PusAdmin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GIVE_BEGINNER_ITEM" FunctionName="moyangamePKModel.Store.GIVE_BEGINNER_ITEM" />
+    <FunctionImportMapping FunctionImportName="INSERT_CURRENTUSER" FunctionName="moyangamePKModel.Store.INSERT_CURRENTUSER" />
+    <FunctionImportMapping FunctionImportName="INSERT_FRIEND_LIST" FunctionName="moyangamePKModel.Store.INSERT_FRIEND_LIST" />
+    <FunctionImportMapping FunctionImportName="INSERT_UPGRADE" FunctionName="moyangamePKModel.Store.INSERT_UPGRADE" />
+    <FunctionImportMapping FunctionImportName="INSERT_USER_DAILY_OP" FunctionName="moyangamePKModel.Store.INSERT_USER_DAILY_OP" />
+    <FunctionImportMapping FunctionImportName="INSERTITEM" FunctionName="moyangamePKModel.Store.INSERTITEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.INSERTITEM_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+          <ScalarProperty Name="Column3" ColumnName="Column3" />
+          <ScalarProperty Name="Column4" ColumnName="Column4" />
+          <ScalarProperty Name="Column5" ColumnName="Column5" />
+          <ScalarProperty Name="Column6" ColumnName="Column6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ITEMLERI_BUL" FunctionName="moyangamePKModel.Store.ITEMLERI_BUL" />
+    <FunctionImportMapping FunctionImportName="ITEMLERI_BUL_BANKA" FunctionName="moyangamePKModel.Store.ITEMLERI_BUL_BANKA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.ITEMLERI_BUL_BANKA_Result">
+          <ScalarProperty Name="dwid" ColumnName="dwid" />
+          <ScalarProperty Name="stacksize" ColumnName="stacksize" />
+          <ScalarProperty Name="durability" ColumnName="durability" />
+          <ScalarProperty Name="strUserId" ColumnName="strUserId" />
+          <ScalarProperty Name="sira" ColumnName="sira" />
+          <ScalarProperty Name="itembasicname" ColumnName="itembasicname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ITEMLERI_ENCODE" FunctionName="moyangamePKModel.Store.ITEMLERI_ENCODE" />
+    <FunctionImportMapping FunctionImportName="ITEMLERI_ENCODE_BANKA" FunctionName="moyangamePKModel.Store.ITEMLERI_ENCODE_BANKA" />
+    <FunctionImportMapping FunctionImportName="KAYITDDD" FunctionName="moyangamePKModel.Store.KAYITDDD" />
+    <FunctionImportMapping FunctionImportName="KING_CANDIDACY_NOTICE_BOARD_PROC" FunctionName="moyangamePKModel.Store.KING_CANDIDACY_NOTICE_BOARD_PROC" />
+    <FunctionImportMapping FunctionImportName="KING_CANDIDACY_RECOMMEND" FunctionName="moyangamePKModel.Store.KING_CANDIDACY_RECOMMEND">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.KING_CANDIDACY_RECOMMEND_Result">
+          <ScalarProperty Name="byType" ColumnName="byType" />
+          <ScalarProperty Name="byNation" ColumnName="byNation" />
+          <ScalarProperty Name="nKnights" ColumnName="nKnights" />
+          <ScalarProperty Name="strName" ColumnName="strName" />
+          <ScalarProperty Name="nMoney" ColumnName="nMoney" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="KING_CHANGE_TAX" FunctionName="moyangamePKModel.Store.KING_CHANGE_TAX" />
+    <FunctionImportMapping FunctionImportName="KING_ELECTION_PROC" FunctionName="moyangamePKModel.Store.KING_ELECTION_PROC" />
+    <FunctionImportMapping FunctionImportName="KING_IMPEACHMENT_ELECTION" FunctionName="moyangamePKModel.Store.KING_IMPEACHMENT_ELECTION" />
+    <FunctionImportMapping FunctionImportName="KING_IMPEACHMENT_REQUEST_ELECTION" FunctionName="moyangamePKModel.Store.KING_IMPEACHMENT_REQUEST_ELECTION" />
+    <FunctionImportMapping FunctionImportName="KING_IMPEACHMENT_RESULT" FunctionName="moyangamePKModel.Store.KING_IMPEACHMENT_RESULT" />
+    <FunctionImportMapping FunctionImportName="KING_INSERT_PRIZE_EVENT" FunctionName="moyangamePKModel.Store.KING_INSERT_PRIZE_EVENT" />
+    <FunctionImportMapping FunctionImportName="KING_UPDATE_ELECTION_LIST" FunctionName="moyangamePKModel.Store.KING_UPDATE_ELECTION_LIST" />
+    <FunctionImportMapping FunctionImportName="KING_UPDATE_ELECTION_SCHDULE" FunctionName="moyangamePKModel.Store.KING_UPDATE_ELECTION_SCHDULE" />
+    <FunctionImportMapping FunctionImportName="KING_UPDATE_ELECTION_STATUS" FunctionName="moyangamePKModel.Store.KING_UPDATE_ELECTION_STATUS" />
+    <FunctionImportMapping FunctionImportName="KING_UPDATE_IMPEACHMENT_STATUS" FunctionName="moyangamePKModel.Store.KING_UPDATE_IMPEACHMENT_STATUS" />
+    <FunctionImportMapping FunctionImportName="KING_UPDATE_NOAH_OR_EXP_EVENT" FunctionName="moyangamePKModel.Store.KING_UPDATE_NOAH_OR_EXP_EVENT" />
+    <FunctionImportMapping FunctionImportName="LOAD_ACCOUNT_CHARID" FunctionName="moyangamePKModel.Store.LOAD_ACCOUNT_CHARID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_ACCOUNT_CHARID_Result">
+          <ScalarProperty Name="strCharID1" ColumnName="strCharID1" />
+          <ScalarProperty Name="strCharID2" ColumnName="strCharID2" />
+          <ScalarProperty Name="strCharID3" ColumnName="strCharID3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_CHAR_INFO" FunctionName="moyangamePKModel.Store.LOAD_CHAR_INFO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_CHAR_INFO_Result">
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="HairRGB" ColumnName="HairRGB" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Face" ColumnName="Face" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="strItem" ColumnName="strItem" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_KNIGHTS_MEMBERS" FunctionName="moyangamePKModel.Store.LOAD_KNIGHTS_MEMBERS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_KNIGHTS_MEMBERS_Result">
+          <ScalarProperty Name="strUserId" ColumnName="strUserId" />
+          <ScalarProperty Name="Fame" ColumnName="Fame" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_KNIGHTS_SIEGE_WARFARE_USERS" FunctionName="moyangamePKModel.Store.LOAD_KNIGHTS_SIEGE_WARFARE_USERS" />
+    <FunctionImportMapping FunctionImportName="LOAD_PET_DATA" FunctionName="moyangamePKModel.Store.LOAD_PET_DATA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_PET_DATA_Result">
+          <ScalarProperty Name="PET_SLOT" ColumnName="PET_SLOT" />
+          <ScalarProperty Name="PET_SERIAL" ColumnName="PET_SERIAL" />
+          <ScalarProperty Name="PET_NAME" ColumnName="PET_NAME" />
+          <ScalarProperty Name="PET_EXP" ColumnName="PET_EXP" />
+          <ScalarProperty Name="PET_LEVEL" ColumnName="PET_LEVEL" />
+          <ScalarProperty Name="PET_STOMACH" ColumnName="PET_STOMACH" />
+          <ScalarProperty Name="PET_ITEMID" ColumnName="PET_ITEMID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_PREMIUM_SERVICE_USER" FunctionName="moyangamePKModel.Store.LOAD_PREMIUM_SERVICE_USER" />
+    <FunctionImportMapping FunctionImportName="LOAD_RENTAL_DATA" FunctionName="moyangamePKModel.Store.LOAD_RENTAL_DATA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_RENTAL_DATA_Result">
+          <ScalarProperty Name="strUserID" ColumnName="strUserID" />
+          <ScalarProperty Name="byRentalType" ColumnName="byRentalType" />
+          <ScalarProperty Name="byRegType" ColumnName="byRegType" />
+          <ScalarProperty Name="nRentalIndex" ColumnName="nRentalIndex" />
+          <ScalarProperty Name="nItemIndex" ColumnName="nItemIndex" />
+          <ScalarProperty Name="sDurability" ColumnName="sDurability" />
+          <ScalarProperty Name="nSerialNumber" ColumnName="nSerialNumber" />
+          <ScalarProperty Name="nRentalMoney" ColumnName="nRentalMoney" />
+          <ScalarProperty Name="sRentalTime" ColumnName="sRentalTime" />
+          <ScalarProperty Name="sDuringTime" ColumnName="sDuringTime" />
+          <ScalarProperty Name="timeRental" ColumnName="timeRental" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_SAVED_MAGIC" FunctionName="moyangamePKModel.Store.LOAD_SAVED_MAGIC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_SAVED_MAGIC_Result">
+          <ScalarProperty Name="nSkill1" ColumnName="nSkill1" />
+          <ScalarProperty Name="nDuring1" ColumnName="nDuring1" />
+          <ScalarProperty Name="nSkill2" ColumnName="nSkill2" />
+          <ScalarProperty Name="nDuring2" ColumnName="nDuring2" />
+          <ScalarProperty Name="nSkill3" ColumnName="nSkill3" />
+          <ScalarProperty Name="nDuring3" ColumnName="nDuring3" />
+          <ScalarProperty Name="nSkill4" ColumnName="nSkill4" />
+          <ScalarProperty Name="nDuring4" ColumnName="nDuring4" />
+          <ScalarProperty Name="nSkill5" ColumnName="nSkill5" />
+          <ScalarProperty Name="nDuring5" ColumnName="nDuring5" />
+          <ScalarProperty Name="nSkill6" ColumnName="nSkill6" />
+          <ScalarProperty Name="nDuring6" ColumnName="nDuring6" />
+          <ScalarProperty Name="nSkill7" ColumnName="nSkill7" />
+          <ScalarProperty Name="nDuring7" ColumnName="nDuring7" />
+          <ScalarProperty Name="nSkill8" ColumnName="nSkill8" />
+          <ScalarProperty Name="nDuring8" ColumnName="nDuring8" />
+          <ScalarProperty Name="nSkill9" ColumnName="nSkill9" />
+          <ScalarProperty Name="nDuring9" ColumnName="nDuring9" />
+          <ScalarProperty Name="nSkill10" ColumnName="nSkill10" />
+          <ScalarProperty Name="nDuring10" ColumnName="nDuring10" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_SEALED_ITEM_DATA" FunctionName="moyangamePKModel.Store.LOAD_SEALED_ITEM_DATA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_SEALED_ITEM_DATA_Result">
+          <ScalarProperty Name="nItemSerial" ColumnName="nItemSerial" />
+          <ScalarProperty Name="nItemID" ColumnName="nItemID" />
+          <ScalarProperty Name="bSealType" ColumnName="bSealType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_USER_DATA" FunctionName="moyangamePKModel.Store.LOAD_USER_DATA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_USER_DATA_Result">
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="HairRGB" ColumnName="HairRGB" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Exp" ColumnName="Exp" />
+          <ScalarProperty Name="Loyalty" ColumnName="Loyalty" />
+          <ScalarProperty Name="Face" ColumnName="Face" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Knights" ColumnName="Knights" />
+          <ScalarProperty Name="Fame" ColumnName="Fame" />
+          <ScalarProperty Name="Hp" ColumnName="Hp" />
+          <ScalarProperty Name="Mp" ColumnName="Mp" />
+          <ScalarProperty Name="Sp" ColumnName="Sp" />
+          <ScalarProperty Name="Strong" ColumnName="Strong" />
+          <ScalarProperty Name="Sta" ColumnName="Sta" />
+          <ScalarProperty Name="Dex" ColumnName="Dex" />
+          <ScalarProperty Name="Intel" ColumnName="Intel" />
+          <ScalarProperty Name="Cha" ColumnName="Cha" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Bind" ColumnName="Bind" />
+          <ScalarProperty Name="PX" ColumnName="PX" />
+          <ScalarProperty Name="PZ" ColumnName="PZ" />
+          <ScalarProperty Name="PY" ColumnName="PY" />
+          <ScalarProperty Name="dwTime" ColumnName="dwTime" />
+          <ScalarProperty Name="strSkill" ColumnName="strSkill" />
+          <ScalarProperty Name="strItem" ColumnName="strItem" />
+          <ScalarProperty Name="strSerial" ColumnName="strSerial" />
+          <ScalarProperty Name="sQuestCount" ColumnName="sQuestCount" />
+          <ScalarProperty Name="strQuest" ColumnName="strQuest" />
+          <ScalarProperty Name="MannerPoint" ColumnName="MannerPoint" />
+          <ScalarProperty Name="LoyaltyMonthly" ColumnName="LoyaltyMonthly" />
+          <ScalarProperty Name="strItemTime" ColumnName="strItemTime" />
+          <ScalarProperty Name="strMemo" ColumnName="strMemo" />
+          <ScalarProperty Name="sGenieTime" ColumnName="sGenieTime" />
+          <ScalarProperty Name="strGenieOptions" ColumnName="strGenieOptions" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_WEB_ITEMMALL" FunctionName="moyangamePKModel.Store.LOAD_WEB_ITEMMALL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.LOAD_WEB_ITEMMALL_Result">
+          <ScalarProperty Name="strAccountID" ColumnName="strAccountID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+          <ScalarProperty Name="BuyTime" ColumnName="BuyTime" />
+          <ScalarProperty Name="itemtime" ColumnName="itemtime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MAIL_BOX_CHECK_COUNT" FunctionName="moyangamePKModel.Store.MAIL_BOX_CHECK_COUNT" />
+    <FunctionImportMapping FunctionImportName="MAIL_BOX_DELETE_LETTER" FunctionName="moyangamePKModel.Store.MAIL_BOX_DELETE_LETTER" />
+    <FunctionImportMapping FunctionImportName="MAIL_BOX_GET_ITEM" FunctionName="moyangamePKModel.Store.MAIL_BOX_GET_ITEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.MAIL_BOX_GET_ITEM_Result">
+          <ScalarProperty Name="nItemID" ColumnName="nItemID" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+          <ScalarProperty Name="sDurability" ColumnName="sDurability" />
+          <ScalarProperty Name="nCoins" ColumnName="nCoins" />
+          <ScalarProperty Name="nSerialNum" ColumnName="nSerialNum" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MAIL_BOX_READ" FunctionName="moyangamePKModel.Store.MAIL_BOX_READ" />
+    <FunctionImportMapping FunctionImportName="MAIL_BOX_REQUEST_LIST" FunctionName="moyangamePKModel.Store.MAIL_BOX_REQUEST_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.MAIL_BOX_REQUEST_LIST_Result">
+          <ScalarProperty Name="nLetterID" ColumnName="nLetterID" />
+          <ScalarProperty Name="bStatus" ColumnName="bStatus" />
+          <ScalarProperty Name="bType" ColumnName="bType" />
+          <ScalarProperty Name="strSubject" ColumnName="strSubject" />
+          <ScalarProperty Name="strSenderID" ColumnName="strSenderID" />
+          <ScalarProperty Name="bType1" ColumnName="bType1" />
+          <ScalarProperty Name="nItemID" ColumnName="nItemID" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+          <ScalarProperty Name="nCoins" ColumnName="nCoins" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MAIL_BOX_SEND" FunctionName="moyangamePKModel.Store.MAIL_BOX_SEND" />
+    <FunctionImportMapping FunctionImportName="MAIL_CHECK_NEWLETTER" FunctionName="moyangamePKModel.Store.MAIL_CHECK_NEWLETTER" />
+    <FunctionImportMapping FunctionImportName="MAIL_CHECK_USER" FunctionName="moyangamePKModel.Store.MAIL_CHECK_USER" />
+    <FunctionImportMapping FunctionImportName="MAIL_DELETE_OLDLETTER" FunctionName="moyangamePKModel.Store.MAIL_DELETE_OLDLETTER" />
+    <FunctionImportMapping FunctionImportName="MAIL_OPEN_NEWLETTER" FunctionName="moyangamePKModel.Store.MAIL_OPEN_NEWLETTER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.MAIL_OPEN_NEWLETTER_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MAIL_TAKE_LETTERITEM" FunctionName="moyangamePKModel.Store.MAIL_TAKE_LETTERITEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.MAIL_TAKE_LETTERITEM_Result">
+          <ScalarProperty Name="nNum" ColumnName="nNum" />
+          <ScalarProperty Name="sCount" ColumnName="sCount" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MAIN_LOGIN" FunctionName="moyangamePKModel.Store.MAIN_LOGIN" />
+    <FunctionImportMapping FunctionImportName="MASTER_AC" FunctionName="moyangamePKModel.Store.MASTER_AC" />
+    <FunctionImportMapping FunctionImportName="mob" FunctionName="moyangamePKModel.Store.mob" />
+    <FunctionImportMapping FunctionImportName="NATION_SELECT" FunctionName="moyangamePKModel.Store.NATION_SELECT" />
+    <FunctionImportMapping FunctionImportName="RENTAL_ITEM_CANCEL" FunctionName="moyangamePKModel.Store.RENTAL_ITEM_CANCEL" />
+    <FunctionImportMapping FunctionImportName="RENTAL_ITEM_DESTORY" FunctionName="moyangamePKModel.Store.RENTAL_ITEM_DESTORY" />
+    <FunctionImportMapping FunctionImportName="RENTAL_ITEM_DURABILITY_UPDATE" FunctionName="moyangamePKModel.Store.RENTAL_ITEM_DURABILITY_UPDATE" />
+    <FunctionImportMapping FunctionImportName="RENTAL_ITEM_LEND" FunctionName="moyangamePKModel.Store.RENTAL_ITEM_LEND" />
+    <FunctionImportMapping FunctionImportName="RENTAL_ITEM_REGISTER" FunctionName="moyangamePKModel.Store.RENTAL_ITEM_REGISTER" />
+    <FunctionImportMapping FunctionImportName="RESET_LOYALTY_MONTHLY" FunctionName="moyangamePKModel.Store.RESET_LOYALTY_MONTHLY" />
+    <FunctionImportMapping FunctionImportName="SAVE_PREMIUM_SERVICE_USER" FunctionName="moyangamePKModel.Store.SAVE_PREMIUM_SERVICE_USER" />
+    <FunctionImportMapping FunctionImportName="SET_LOGIN_INFO" FunctionName="moyangamePKModel.Store.SET_LOGIN_INFO" />
+    <FunctionImportMapping FunctionImportName="SHOPPINGMALL_BUY" FunctionName="moyangamePKModel.Store.SHOPPINGMALL_BUY" />
+    <FunctionImportMapping FunctionImportName="SKILLSHORTCUT_LOAD" FunctionName="moyangamePKModel.Store.SKILLSHORTCUT_LOAD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.SKILLSHORTCUT_LOAD_Result">
+          <ScalarProperty Name="nCount" ColumnName="nCount" />
+          <ScalarProperty Name="strSkillData" ColumnName="strSkillData" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SKILLSHORTCUT_SAVE" FunctionName="moyangamePKModel.Store.SKILLSHORTCUT_SAVE" />
+    <FunctionImportMapping FunctionImportName="SP_SEACH_CODE" FunctionName="moyangamePKModel.Store.SP_SEACH_CODE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moyangamePKModel.SP_SEACH_CODE_Result">
+          <ScalarProperty Name="Object_name" ColumnName="Object name" />
+          <ScalarProperty Name="Object_type" ColumnName="Object type" />
+          <ScalarProperty Name="Run_this_command_to_see_the_object_text" ColumnName="Run this command to see the object text" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_BATTLE_RESULT" FunctionName="moyangamePKModel.Store.UPDATE_BATTLE_RESULT" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHT_CASH" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHT_CASH" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHTS" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHTS" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHTS_ALLIANCE" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHTS_ALLIANCE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHTS_CAPE" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHTS_CAPE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHTS_MARK" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHTS_MARK" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHTS_RATING" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHTS_RATING" />
+    <FunctionImportMapping FunctionImportName="UPDATE_KNIGHTS_WAR" FunctionName="moyangamePKModel.Store.UPDATE_KNIGHTS_WAR" />
+    <FunctionImportMapping FunctionImportName="UPDATE_PET_DATA" FunctionName="moyangamePKModel.Store.UPDATE_PET_DATA" />
+    <FunctionImportMapping FunctionImportName="UPDATE_PET_DELETE" FunctionName="moyangamePKModel.Store.UPDATE_PET_DELETE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_QUEST_LOG" FunctionName="moyangamePKModel.Store.UPDATE_QUEST_LOG" />
+    <FunctionImportMapping FunctionImportName="UPDATE_RANKS" FunctionName="moyangamePKModel.Store.UPDATE_RANKS" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SAVED_MAGIC" FunctionName="moyangamePKModel.Store.UPDATE_SAVED_MAGIC" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SIEGE" FunctionName="moyangamePKModel.Store.UPDATE_SIEGE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SIEGE_CHALLENGER" FunctionName="moyangamePKModel.Store.UPDATE_SIEGE_CHALLENGER" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SIEGE_CHALLENGER2" FunctionName="moyangamePKModel.Store.UPDATE_SIEGE_CHALLENGER2" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SIEGE_DECIDE_CHALLENGER" FunctionName="moyangamePKModel.Store.UPDATE_SIEGE_DECIDE_CHALLENGER" />
+    <FunctionImportMapping FunctionImportName="UPDATE_USER_DAILY_OP" FunctionName="moyangamePKModel.Store.UPDATE_USER_DAILY_OP" />
+    <FunctionImportMapping FunctionImportName="UPDATE_USER_DATA" FunctionName="moyangamePKModel.Store.UPDATE_USER_DATA" />
+    <FunctionImportMapping FunctionImportName="UPDATE_USER_DATA_QUEST" FunctionName="moyangamePKModel.Store.UPDATE_USER_DATA_QUEST" />
+    <FunctionImportMapping FunctionImportName="UPDATE_USER_KNIGHTS_RANK" FunctionName="moyangamePKModel.Store.UPDATE_USER_KNIGHTS_RANK" />
+    <FunctionImportMapping FunctionImportName="UPDATE_USER_PERSONAL_RANK" FunctionName="moyangamePKModel.Store.UPDATE_USER_PERSONAL_RANK" />
+    <FunctionImportMapping FunctionImportName="UPDATE_USER_STYLE" FunctionName="moyangamePKModel.Store.UPDATE_USER_STYLE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_WAREHOUSE" FunctionName="moyangamePKModel.Store.UPDATE_WAREHOUSE" />
+    <FunctionImportMapping FunctionImportName="USER_ITEM_SEAL" FunctionName="moyangamePKModel.Store.USER_ITEM_SEAL" />
+  </EntityContainerMapping>
+</Mapping>
