@@ -34,25 +34,22 @@ namespace KOCharp
 
     public class LoginServerDLG
     {
-        public main m_fDialog;
         public short version = 0;
         public List<VERSION> PatchList = new List<VERSION>();
         public string FTP_URL = String.Empty;
         public string FTP_PATH = String.Empty;
 
-        public LoginServerDLG(main main)
+        public LoginServerDLG()
         {
             
-            this.m_fDialog = main;
-
             KODatabase db = new KODatabase();
-            foreach(VERSION lstVersion in db.VERSIONs)
+            foreach(VERSION lstVersion in db.VERSION)
             {
                 version = version > lstVersion.sVersion ? version : lstVersion.sVersion;
                 PatchList.Add(lstVersion);
             }
 
-            main.ProgressList.Items.Add("Login Versiyon : "+version);
+            Console.WriteLine("Login Versiyon : " + version);
 
             INIReader ini = new INIReader(Environment.CurrentDirectory + "/LogInServer.ini");
             FTP_URL = ini.Read("DOWNLOAD", "URL");
@@ -83,7 +80,7 @@ namespace KOCharp
         internal void GetServerList(ref Packet result)
         {
             KODatabase db = new KODatabase();
-            short CurrentUserCount = (short)db.CURRENTUSERs.Count();
+            short CurrentUserCount = (short)db.CURRENTUSER.Count();
             result.SetByte((byte)ServerList.Count);
 
             foreach(SERVER_INFO server in ServerList)

@@ -10,11 +10,16 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class dtproperties
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int id { get; set; }
+        public Nullable<int> objectid { get; set; }
+        public string property { get; set; }
+        public string value { get; set; }
+        public string uvalue { get; set; }
+        public byte[] lvalue { get; set; }
+        public int version { get; set; }
     }
 }

@@ -77,7 +77,7 @@ namespace KOCharp
         {
             KODatabase db = new KODatabase();
 
-            var user = db.USERDATAs.Where(u => u.strUserID == charID).First();
+            var user = db.USERDATA.Where(u => u.strUserID == charID).First();
 
             int nHair = 0;
             short sClass = 0;

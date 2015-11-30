@@ -10,11 +10,16 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class LOG_BANS
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int banid { get; set; }
+        public string account { get; set; }
+        public int before { get; set; }
+        public int now { get; set; }
+        public string byadmin { get; set; }
+        public System.DateTime datetime { get; set; }
+        public string reason { get; set; }
     }
 }

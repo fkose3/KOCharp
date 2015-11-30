@@ -10,11 +10,18 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class LOG_SENDITEM
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int sid { get; set; }
+        public string von { get; set; }
+        public string an { get; set; }
+        public string itemname { get; set; }
+        public int count { get; set; }
+        public int upgrade { get; set; }
+        public int element { get; set; }
+        public int elementupgrade { get; set; }
+        public int piercing { get; set; }
     }
 }

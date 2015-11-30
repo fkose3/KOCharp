@@ -10,11 +10,16 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class ESN_KOD
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int id { get; set; }
+        public string esnkod { get; set; }
+        public string passkod1 { get; set; }
+        public string passkod2 { get; set; }
+        public decimal fiyat { get; set; }
+        public bool durum { get; set; }
+        public string straccountid { get; set; }
     }
 }

@@ -29,7 +29,12 @@ namespace KOCharp.Classes.Database
         public string guvenliksoru { get; set; }
         public Nullable<int> TCashPoint { get; set; }
         public Nullable<byte> PusAdmin { get; set; }
-        public int BonusCashPoint { get; set; }
+        public Nullable<byte> strAuthority { get; set; }
+        public Nullable<int> StrSoru { get; set; }
+        public string strCevap { get; set; }
+        public string strAd { get; set; }
+        public string strSoyad { get; set; }
+        public Nullable<int> BonusCashPoint { get; set; }
         public string Privatekey { get; set; }
         public string Referencekey { get; set; }
         public bool GiveReferenceVal { get; set; }

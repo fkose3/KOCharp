@@ -14,7 +14,7 @@ namespace KOCharp.Classes.Database
             {
                 KODatabase db = new KODatabase();
 
-                foreach(ITEM item in db.ITEMs)
+                foreach(ITEM item in db.ITEM)
                 {
                     _ITEM_TABLE pItem = new _ITEM_TABLE();
 
@@ -84,6 +84,7 @@ namespace KOCharp.Classes.Database
             {
                 return false;
             }
+            
             return true;
         }
 
@@ -93,7 +94,7 @@ namespace KOCharp.Classes.Database
             {
                 KODatabase db = new KODatabase();
 
-                foreach (COEFFICIENT coeff in db.COEFFICIENTs)
+                foreach (COEFFICIENT coeff in db.COEFFICIENT)
                 {
                     m_CoefficientArray.Add(coeff);
                 }

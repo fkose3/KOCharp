@@ -10,11 +10,15 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class LOG_LOGIN
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int id { get; set; }
+        public string account { get; set; }
+        public string ip { get; set; }
+        public string host { get; set; }
+        public string browser { get; set; }
+        public int timestamp { get; set; }
     }
 }

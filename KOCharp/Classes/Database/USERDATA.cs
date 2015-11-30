@@ -60,6 +60,5 @@ namespace KOCharp.Classes.Database
         public string strMemo { get; set; }
         public short sGenieTime { get; set; }
         public string strGenieOptions { get; set; }
-        public byte[] strAchieveData { get; set; }
     }
 }

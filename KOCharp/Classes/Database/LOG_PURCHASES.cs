@@ -10,11 +10,17 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class LOG_PURCHASES
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int bid { get; set; }
+        public int item { get; set; }
+        public string account { get; set; }
+        public System.DateTime datetime { get; set; }
+        public string itemname { get; set; }
+        public Nullable<int> itemcount { get; set; }
+        public Nullable<int> itemworth { get; set; }
+        public byte itemcurrency { get; set; }
     }
 }

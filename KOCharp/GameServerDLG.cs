@@ -62,14 +62,35 @@ namespace KOCharp
         public GameServerDLG(main main)
         {
             this.main = main;
-            
-            if (!LoadCoefficient(ref m_CoefficientArray)
-                || !LoadNpc(ref m_NpcList)
-                || !LoadLevelUp(ref m_LevelUpArray)
-                || !LoadItemTable(ref m_ItemArray))
+
+            Console.WriteLine("LOADING COEFFICIENT");
+            if (!LoadCoefficient(ref m_CoefficientArray))
             {
-                MessageBox.Show("Database okunamadı. Server kapatılıyor.");
+                MessageBox.Show("Database okunamadı. Server kapatılıyor."); Environment.Exit(0);
             }
+            Console.WriteLine("\t\t[\tOK\t]");
+
+            Console.WriteLine("LOADING LEVELUP");
+            if (!LoadLevelUp(ref m_LevelUpArray))
+            {
+                MessageBox.Show("Database okunamadı. Server kapatılıyor."); Environment.Exit(0);
+            }
+            Console.WriteLine("\t\t[\tOK\t]");
+
+            Console.WriteLine("LOADING ITEM");
+            if (!LoadItemTable(ref m_ItemArray))
+            {
+                MessageBox.Show("Database okunamadı. Server kapatılıyor."); Environment.Exit(0);
+            }
+            Console.WriteLine("\t\t[\tOK\t]");
+
+            Console.WriteLine("LOADING NPCLIST");
+            if (!LoadNpc(ref m_NpcList))
+            {
+                MessageBox.Show("Database okunamadı. Server kapatılıyor."); Environment.Exit(0);
+            }
+            Console.WriteLine("\t\t[\tOK\t]");
+            
 
             // Maksimum kullanıcı sayısında oyuncu portu aç
             for (int i = 0; i < USER_MAX; i++)

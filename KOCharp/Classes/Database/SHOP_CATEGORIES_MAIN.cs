@@ -10,11 +10,12 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class SHOP_CATEGORIES_MAIN
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int mid { get; set; }
+        public string name { get; set; }
+        public byte active { get; set; }
     }
 }

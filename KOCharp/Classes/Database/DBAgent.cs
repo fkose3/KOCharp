@@ -18,7 +18,7 @@ namespace KOCharp
             KODatabase db = new KODatabase();
 
             ACCOUNT_CHAR aChar = db.ACCOUNT_CHAR.Where(acc => acc.strAccountID == strUserID).FirstOrDefault();
-            WAREHOUSE wHouse = db.WAREHOUSEs.Where(wh => wh.strAccountID == strUserID).FirstOrDefault();
+            WAREHOUSE wHouse = db.WAREHOUSE.Where(wh => wh.strAccountID == strUserID).FirstOrDefault();
 
             if (wHouse == null)
             {
@@ -30,7 +30,7 @@ namespace KOCharp
                 wHouse.strSerial = new byte[1536];
                 wHouse.WarehouseDataTime = new byte[1536];
 
-                db.WAREHOUSEs.Add(wHouse);
+                db.WAREHOUSE.Add(wHouse);
                 
                 Debug.WriteLine("WAREHOUSE hesabı bulunamadığından yeni WAREHOUSE eklendi.");
             }
@@ -43,7 +43,6 @@ namespace KOCharp
                 aChar.strCharID1 = null;
                 aChar.strCharID2 = null;
                 aChar.strCharID3 = null;
-                aChar.strCharID4 = null;
                 db.ACCOUNT_CHAR.Add(aChar);
                 Debug.WriteLine("Hesap bulunamadığından yeni account eklendi.");
             }
@@ -136,7 +135,7 @@ namespace KOCharp
             KODatabase db = new KODatabase();
             try
             {
-                USERDATA pData = db.USERDATAs.Where(user => user.strUserID == strCharID).FirstOrDefault();
+                USERDATA pData = db.USERDATA.Where(user => user.strUserID == strCharID).FirstOrDefault();
 
                 if (pData == null)
                     return false;

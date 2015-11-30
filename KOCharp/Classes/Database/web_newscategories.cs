@@ -10,11 +10,12 @@
 namespace KOCharp.Classes.Database
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class LOAD_ACCOUNT_CHARID_Result
+    public partial class web_newscategories
     {
-        public string strCharID1 { get; set; }
-        public string strCharID2 { get; set; }
-        public string strCharID3 { get; set; }
+        public int ncatid { get; set; }
+        public string title { get; set; }
+        public string icon { get; set; }
     }
 }
