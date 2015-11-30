@@ -15,6 +15,7 @@ namespace KOCharp
         [STAThread]
         static void Main()
         {
+            Console.Title = "Knight Online Server";
             LoginServerDLG dlg = new LoginServerDLG();
             for (int i = 0; i < 10; i++)
                 THREADCALL_LOGIN(15100 + i, dlg);

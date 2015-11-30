@@ -486,7 +486,7 @@ namespace KOCharp
                 Thread.Sleep(45);
             }
 
-            OnDisconnect();
+           // OnDisconnect();
         }
 
         public void OnDisconnect()
@@ -923,83 +923,40 @@ namespace KOCharp
                 return;
 
             byte opcode = pkt.GetByte();
-
+            Console.WriteLine("Game Start Opcode : " + opcode);
             if (opcode == 1)
             {
                 SendMyInfo();
+
                 g_pMain.UserInOutForMe(this);
                 g_pMain.MerchantUserInOutForMe(this);
                 g_pMain.NpcInOutForMe(this);
+
                 SendNotice();
                 TopSendNotice();
                 SendTime();
                 SendWeather();
 
-                /*if (GetPremium() > 0)
-                    SendPremiumInfo();
-
-                if (GetGenieTime() > 0)
-                    GenieInfo();*/
-                //SendHackToolList();
-
-                Packet result = new Packet(WIZ_GAMESTART);
+                Packet result = new Packet(2);
+                result.SetByte(WIZ_GAMESTART);
                 Send(result);
-            }
-            else if (opcode == 2)
-            {
+
                 m_State = GameState.GAME_STATE_INGAME;
                 UserInOut(InOutType.INOUT_RESPAWN, this);
+                bGameStart = true;
 
-                if (m_bCity <= 0 && m_sHp <= 0)
-                    m_bCity = -1;
-
-                if (m_bCity > 0)
-                {
-                    int level = m_bLevel;
-                    if (m_bCity <= 100)
-                        level--;
-
-                    // make sure we don't exceed bounds
-                    if (level > MAX_LEVEL)
-                        level = MAX_LEVEL;
-                    else if (level < 1)
-                        level = 1;
-
-                    m_iLostExp = (g_pMain.GetExpByLevel(level) * (m_bCity % 10) / 100);
-                    if (((m_bCity % 10) / 100) == 1)
-                        m_iLostExp /= 2;
-                }
-                else
-                {
-                    m_iLostExp = 0;
-                }
-
-                BlinkStart();
                 SetUserAbility();
 
-                // If we've relogged while dead, we need to make sure the client 
-                // is still given the option to revive.
                 if (isDead())
                     SendDeathAnimation();
 
-                g_pMain.TempleEventGetActiveEventTime(this);
-
-
-                m_tGameStartTimeSavedMagic = UNIXTIME;
+                // m_tGameStartTimeSavedMagic = UNIXTIME;
 
                 m_LastX = GetX();
                 m_LastZ = GetZ();
             }
-            // CSW yapılacağı zaman eklenecek
-            //_KNIGHTS_SIEGE_WARFARE* pKnightSiege = g_pMain->GetSiegeMasterKnightsPtr(1);
-            //CKnights* pKnights = g_pMain->GetClanPtr(pKnightSiege->sMasterKnights);
-            //
-            //if (GetZoneID() == ZONE_DELOS && pKnights != nullptr)
-            //{
-            //    Packet result(WIZ_SIEGE, uint8(2));
-            //    result << pKnights->GetID() << pKnights->m_sMarkVersion;
-            //    Send(&result);
-            //}
+
+            BlinkStart();
 
             m_tHPLastTimeNormal = UNIXTIME;
         }
@@ -1721,22 +1678,16 @@ namespace KOCharp
             result.SetShort(0);
             result.SetDword(0); // Military Camp
             result.SetShort(m_sGenieTime);// Genie
-            result.SetByte(isRebirth()); // Rebirth
-
-            for (int i = 0; i < 5; i++)
-                result.SetByte(m_brStats[i]);
-
-            result.SetInt64(m_iSealedExp);
-            result.SetShort(GetAchieveTitle());
-            result.SetShort(GetAchieveSkillTitle());
-            result.SetShort(GetAchieveSkillTitle());
+           
 
             Send(result);
 
             if (!g_pMain.AddUserInGame(GetID(), this))
                 OnDisconnect();
             else
-                bGameStart = true;           
+                bGameStart = true;
+
+            Console.WriteLine("Send My info Gönderildi.");          
         }
 
         public void ServerIndex(Packet pkt)
@@ -1774,5 +1725,101 @@ namespace KOCharp
             fail_return:
             Send(result);
         }
+        
+        internal void GetUserInfo(ref Packet result)
+        {            
+            Knights pKnights = null;
+
+            result.SByte();
+            result.SetString(GetName());
+            result.SetShort(GetNation());
+            result.SetShort(m_bKnights);
+            result.SetByte(GetFame());
+
+            pKnights = g_pMain.GetClanPtr(m_bKnights);
+
+            if (pKnights == null)
+            {
+                result.SetDword(0);
+                result.SetShort(0);
+                result.SetByte(0);
+                result.SetShort(-1);
+                result.SetDword(0);
+                result.SetByte(0);
+            }
+            else
+            {
+                result.SetShort(pKnights.GetAllianceID());
+
+                result.SetString(pKnights.m_strName);
+
+                result.SetByte(pKnights.m_byGrade);
+                result.SetByte(pKnights.m_byRanking);
+
+                result.SetShort(pKnights.m_sMarkVersion);
+                result.SetShort(pKnights.m_sCape);
+
+                result.SetByte(pKnights.m_bCapeR);
+                result.SetByte(pKnights.m_bCapeG);
+                result.SetByte(pKnights.m_bCapeB);
+                result.SetByte(0);
+                result.SetByte(1);
+            }
+
+            InvisibilityType bInvisibilityType = (InvisibilityType)m_bInvisibilityType;
+            if (bInvisibilityType != InvisibilityType.INVIS_NONE)
+                bInvisibilityType = InvisibilityType.INVIS_DISPEL_ON_MOVE;
+
+            result.SetByte(GetLevel()); result.SetByte(m_bRace); result.SetShort(m_sClass);
+            result.SetShort(GetSPosX()); result.SetShort(GetSPosZ()); result.SetShort(GetSPosY());
+            result.SetByte(m_bFace); result.SetDword(m_nHair);
+            result.SetByte(m_bResHpType); result.SetDword(m_bAbnormalType);
+            result.SetByte(m_bNeedParty);
+            result.SetByte(m_bAuthority);
+            result.SetByte(m_bPartyLeader);
+            result.SetByte((byte)bInvisibilityType);
+            result.SetByte(m_teamColour);
+            result.SetByte(m_bIsHidingHelmet);
+            result.SetByte((byte)bInvisibilityType);
+            result.SetShort(m_sDirection);
+            result.SetByte(m_bIsChicken);
+            result.SetByte(m_bRank);
+            result.SetShort(0);
+            result.SetByte(m_bKnightsRank);
+            result.SetByte(m_bPersonalRank);
+
+            byte[] equippedItems =
+            {
+                BREAST, LEG, HEAD, GLOVE, FOOT, SHOULDER, RIGHTHAND, LEFTHAND,
+                CWING, CHELMET, CRIGHT, CLEFT, CTOP, CFAIRY
+            };
+
+            foreach (byte i in equippedItems)
+            {
+
+                _ITEM_DATA pItem = GetItem(i);
+
+                if (pItem == null)
+                    continue;
+
+                result.SetDword(pItem.nNum);
+                result.SetShort(pItem.sDuration);
+                result.SetByte(pItem.bFlag);
+            }
+
+            result.SetByte(GetZoneID());
+            result.SetShort(-1);
+            result.SetDword(0); result.SetShort(0); result.SetByte(0); result.SetByte(isGenieActive());
+
+            if (__VERSION > 2000)
+            {
+                result.SetByte(isRebirth());
+                result.SetShort(GetAchieveTitle());
+                result.SetShort(0);
+                result.SetByte(0);
+                result.SetByte(1);
+            }
+        }
+
     }
 }

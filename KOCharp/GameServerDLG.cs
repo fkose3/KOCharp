@@ -78,10 +78,10 @@ namespace KOCharp
             Console.WriteLine("\t\t[\tOK\t]");
 
             Console.WriteLine("LOADING ITEM");
-            if (!LoadItemTable(ref m_ItemArray))
-            {
-                MessageBox.Show("Database okunamadı. Server kapatılıyor."); Environment.Exit(0);
-            }
+            //if (!LoadItemTable(ref m_ItemArray))
+            //{
+            //    MessageBox.Show("Database okunamadı. Server kapatılıyor."); Environment.Exit(0);
+            //}
             Console.WriteLine("\t\t[\tOK\t]");
 
             Console.WriteLine("LOADING NPCLIST");
@@ -103,18 +103,19 @@ namespace KOCharp
         {
             foreach (Pair<short, User, int> pUser in m_arUserList)
             {
-                /* Rezerve edilmiş bir soket ise kontrol et, 
-                 * eğer oyuncu oyunda değil ise bağlantıyı kapat soketi kullanılır hale getir. */
-                if (UNIXTIME - pUser.Other > TIME_PORT_RESERVE && pUser.Second != null && !pUser.Second.isInGame())
+                
+                /* Rerve edilemiş ve kullanılmadıysa */
+                if ((UNIXTIME - pUser.Other < TIME_PORT_RESERVE || pUser.Other == 0) && pUser.Second == null)
                 {
-                    pUser.Second.OnDisconnect();
                     pUser.Second = null;
 
                     return pUser.First;
                 }
-                /* Rerve edilemiş ve kullanılmadıysa */
-                else if (UNIXTIME - pUser.Other > TIME_PORT_RESERVE && pUser.Second == null)
+                /* Rezerve edilmiş bir soket ise kontrol et, 
+                 * eğer oyuncu oyunda değil ise bağlantıyı kapat soketi kullanılır hale getir. */
+                else if(UNIXTIME - pUser.Other > TIME_PORT_RESERVE && pUser.Second != null && !pUser.Second.isInGame())
                 {
+                    pUser.Second.OnDisconnect();
                     pUser.Second = null;
 
                     return pUser.First;
@@ -138,17 +139,59 @@ namespace KOCharp
             return null;         
         }
 
-        internal void UserInOutForMe(User user)
+        internal void UserInOutForMe(User pSendUser)
         {
+            Packet result = new Packet(WIZ_REQ_USERIN);
+            short user_count = 0;
+            Packet temp = new Packet();
+            short rx = pSendUser.GetRegionX(), rz = pSendUser.GetRegionZ();
+
+            for (int x = -3; x <= 3; x++)
+                for (int z = -3; z <= 3; z++)
+                    GetRegionUserList(rx + x, rz + z, ref temp, ref user_count, pSendUser.GetEventRoom(), pSendUser);
+
+
+            result.SetShort(user_count);
+            result.append(temp.send_byte, temp.send_index);
+            pSendUser.Send(result);
         }
 
-        internal void MerchantUserInOutForMe(User user)
+        public void GetRegionUserList(int x, int z, ref Packet result, ref short user_count, short nEventRoom, User pSendUser)
         {
+            foreach (Pair<short, User, int> itr in m_arUserList)
+            {
+                User pUser = itr.Second;
+
+                //if (pUser == null && !pUser.isInGame())
+                //	continue;
+
+                // if (pUser.GetRegionX() != x || pUser.GetRegionZ() != z) continue;
+
+                if (nEventRoom > 0 && nEventRoom != pUser.GetEventRoom())
+                    continue;
+
+                // Regionlar kontrol edilecek
+
+                result.SetByte(0);
+                result.SetShort(pUser.GetSocketID());
+                pUser.GetUserInfo(ref result);
+
+                user_count++;
+            }
         }
 
-        internal void NpcInOutForMe(User user)
+        internal void MerchantUserInOutForMe(User pSendUser)
         {
-            
+            Packet result = new Packet(WIZ_MERCHANT_INOUT);
+            result.SetShort(0);
+            pSendUser.Send(result);
+        }
+
+        internal void NpcInOutForMe(User pSendUser)
+        {
+            Packet result = new Packet(WIZ_REQ_NPCIN);
+            result.SetShort(0);
+            pSendUser.Send(result);
         }
 
         internal Int64 GetExpByLevel(int level)

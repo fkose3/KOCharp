@@ -20,6 +20,5 @@ namespace KOCharp.Classes.Database
         public string strCharID1 { get; set; }
         public string strCharID2 { get; set; }
         public string strCharID3 { get; set; }
-        public string strCharID4 { get; set; }
     }
 }

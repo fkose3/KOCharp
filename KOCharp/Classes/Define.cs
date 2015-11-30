@@ -9,7 +9,7 @@ namespace KOCharp
 {
     public class Define
     {
-        public const int TIME_PORT_RESERVE = 60;
+        public const int TIME_PORT_RESERVE = 60*60; // 1 dakika
 
         public const int MAX_ID_SIZE = 21;
         public const int MAX_PW_SIZE = 28;
