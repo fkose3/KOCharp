@@ -31,7 +31,7 @@ namespace KOCharp
             if (!isLoginServerOpen)
             {
                 m_thdsLoginServer.Clear();
-
+                
                 LoginServerDLG dlg = new LoginServerDLG(this);
                 for (int i = 0; i < 10; i++)
                     m_thdsLoginServer.Add(THREADCALL_LOGIN(15100+ i, dlg));

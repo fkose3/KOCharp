@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace KOCharp
 {
@@ -61,11 +62,11 @@ namespace KOCharp
         public GameServerDLG(main main)
         {
             this.main = main;
-
+            
             if (!LoadCoefficient(ref m_CoefficientArray)
                 || !LoadNpc(ref m_NpcList)
-
-                || !LoadLevelUp(ref m_LevelUpArray))
+                || !LoadLevelUp(ref m_LevelUpArray)
+                || !LoadItemTable(ref m_ItemArray))
             {
                 MessageBox.Show("Database okunamadı. Server kapatılıyor.");
             }
@@ -126,7 +127,7 @@ namespace KOCharp
 
         internal void NpcInOutForMe(User user)
         {
-            throw new NotImplementedException();
+            
         }
 
         internal Int64 GetExpByLevel(int level)
@@ -140,12 +141,17 @@ namespace KOCharp
 
         internal void TempleEventGetActiveEventTime(User user)
         {
-            throw new NotImplementedException();
         }
 
         internal _ITEM_TABLE GetItemPtr(int nNum)
         {
-            throw new NotImplementedException();
+            foreach(_ITEM_TABLE item in m_ItemArray)
+            {
+                if (item.m_iNum == nNum)
+                    return item;
+            }
+
+            return null;
         }
 
         internal void Send_Region(Packet pkt, short rx, short rz, User pExceptUser, short nEventRoom)

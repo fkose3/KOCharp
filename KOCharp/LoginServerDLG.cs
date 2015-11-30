@@ -42,6 +42,7 @@ namespace KOCharp
 
         public LoginServerDLG(main main)
         {
+            
             this.m_fDialog = main;
 
             KODatabase db = new KODatabase();

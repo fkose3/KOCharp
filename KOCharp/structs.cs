@@ -162,7 +162,7 @@ namespace KOCharp
 
     public class _ITEM_TABLE
     {
-        public  int m_iNum;
+        public int m_iNum;
         public string m_sName;
         public byte m_bKind;
         public byte m_bSlot;
