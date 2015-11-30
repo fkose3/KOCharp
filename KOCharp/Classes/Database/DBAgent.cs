@@ -151,7 +151,7 @@ namespace KOCharp
                 pUser.m_iExp    = pData.Exp    ;
                 pUser.m_iLoyalty= pData.Loyalty;
                 pUser.m_bFace   = pData.Face   ;
-                pUser.m_bCity   = pData.City   ;
+                pUser.m_bCity   = (sbyte)pData.City   ;
                 pUser.m_bKnights= pData.Knights;
                 pUser.m_bFame   = pData.Fame   ;
                 pUser.m_sHp     = pData.Hp     ;

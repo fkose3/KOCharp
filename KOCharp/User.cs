@@ -1621,7 +1621,7 @@ namespace KOCharp
             result.SetByte(GetLevel());
             result.SetShort(m_sPoints);
 
-            result.SetInt64(SetMaxExp()); result.SetInt64(m_iExp);
+            result.SetInt64(1/*SetMaxExp()*/); result.SetInt64(m_iExp);
 
             result.SetDword(m_iLoyalty); result.SetDword(m_iLoyaltyMonthly);
 

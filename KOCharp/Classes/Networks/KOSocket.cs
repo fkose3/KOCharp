@@ -29,8 +29,8 @@ namespace KOCharp
         public void Read(int PORT)
         {
             TcpListener PortReader = new TcpListener(PORT);
-            //try
-            //{
+            try
+            {
                 byte[] read_Data = new byte[255];
 
 
@@ -58,11 +58,11 @@ namespace KOCharp
                     PortReader.Stop();
                 }
 
-           //}
-           //catch (Exception ex)
-           //{
-           //    Console.WriteLine(ex.Message);
-           //}
+           }
+           catch (Exception ex)
+           {
+               Console.WriteLine(ex.Message);
+           }
         }
     }
 }

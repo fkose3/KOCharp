@@ -11,7 +11,7 @@ namespace KOCharp
     using System.Threading;
     using System.Windows.Forms;
     using static Define;
-    public static class LoginHandler : base(User)
+    public static class LoginHandler 
     {
         internal static void VersionCheck(User user)
         {
